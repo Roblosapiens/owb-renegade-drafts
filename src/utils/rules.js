@@ -2516,7 +2516,13 @@ export const rules = {
       maxPercent: 50,
       units: [
         {
-          ids: ["sorcerer-prophet", "infernal-castellan"],
+          ids: ["sorcerer-prophet", "infernal-overseer"],
+          min: 0,
+          max: 1,
+          points: 1000,
+        },
+        {
+          ids: ["bull-centaur-taur'ruk"],
           min: 0,
           max: 1,
           points: 1000,
@@ -2532,6 +2538,11 @@ export const rules = {
       minPercent: 25,
       units: [
         {
+          ids: ["hobgoblin-wolf-raiders"],
+          min: 0,
+          max: 1,
+        },
+        {
           ids: ["black-orc-mob"],
           min: 0,
           max: 1,
@@ -2540,9 +2551,8 @@ export const rules = {
           ids: ["infernal-ironsworn-core"],
           min: 0,
           max: 1,
-          requiresGeneral: true,
+          requiresType: "characters",
           requires: ["infernal-castellan"],
-          perUnit: true,
         },
       ],
     },
@@ -2564,7 +2574,7 @@ export const rules = {
         {
           ids: ["hobgoblin-bolt-thrower"],
           min: 0,
-          max: 2,
+          max: 3,
           points: 1000,
         },
       ],
@@ -2581,13 +2591,7 @@ export const rules = {
           perUnit: true,
         },
         {
-          ids: ["bull-centaur-taur'ruk"],
-          min: 0,
-          max: 1,
-          points: 1000,
-        },
-        {
-          ids: ["dreadquake-mortar", "hellcannon"],
+          ids: ["dreadquake-mortar"],
           min: 0,
           max: 1,
           points: 1000,
@@ -2605,6 +2609,11 @@ export const rules = {
       units: [
         {
           ids: ["bonegrinder-giant"],
+          min: 0,
+          max: 1,
+        },
+        {
+          ids: ["orc-mob", "goblin-mob"],
           min: 0,
           max: 1,
         },
@@ -3037,6 +3046,68 @@ export const rules = {
     },
     special: {
       maxPercent: 50,
+      units: [
+        {
+          ids: ["soul-grinder"],
+          min: 0,
+          max: 1,
+          requiresGeneral: true,
+          requires: [
+            "bloodthirster",
+            "daemonic-herald-of-khorne",
+            "daemon-prince",
+          ],
+          requiresOption: {
+            id: "daemon-of-khorne",
+            unit: "daemon-prince",
+          },
+        },
+        {
+          ids: ["plague-drones-of-nurgle"],
+          min: 0,
+          max: 1,
+          requiresGeneral: true,
+          requires: [
+            "great-unclean-one",
+            "daemonic-herald-of-nurgle",
+            "daemon-prince",
+          ],
+          requiresOption: {
+            id: "daemon-of-nurgle",
+            unit: "daemon-prince",
+          },
+        },
+        {
+          ids: ["hellflayer-of-slaanesh"],
+          min: 0,
+          max: 1,
+          requiresGeneral: true,
+          requires: [
+            "keeper-of-secrets",
+            "daemonic-herald-of-slaanesh",
+            "daemon-prince",
+          ],
+          requiresOption: {
+            id: "daemon-of-slaanesh",
+            unit: "daemon-prince",
+          },
+        },
+        {
+          ids: ["burning-chariot-of-tzeentch"],
+          min: 0,
+          max: 1,
+          requiresGeneral: true,
+          requires: [
+            "lord-of-change",
+            "daemonic-herald-of-tzeentch",
+            "daemon-prince",
+          ],
+          requiresOption: {
+            id: "daemon-of-tzeentch",
+            unit: "daemon-prince",
+          },
+        },
+      ],
     },
     rare: {
       maxPercent: 25,
@@ -3047,8 +3118,21 @@ export const rules = {
           max: 1,
           points: 1000,
         },
+        {
+          ids: ["plague-drones-of-nurgle"],
+        },
+        {
+          ids: ["hellflayer-of-slaanesh"],
+        },
+        {
+          ids: ["burning-chariot-of-tzeentch"],
+        },
+        {
+          ids: ["soul-grinder"],
+        },
       ],
     },
+    allies: { maxPercent: 25 },
   },
   "dark-elves": {
     characters: {
@@ -3157,9 +3241,7 @@ export const rules = {
           ids: ["black-guard-of-naggarond"],
           min: 0,
           max: 1,
-          requiresType: "characters",
-          requires: ["dark-elf-dreadlord", "dark-elf-master"],
-          perUnit: true,
+          points: 1000,
         },
         {
           ids: ["cold-one-knights"],
@@ -3174,10 +3256,9 @@ export const rules = {
           points: 1000,
         },
         {
-          ids: ["war-hydra", "kharybdiss"],
+          ids: ["war-hydra", "kharibdyss"],
           min: 0,
           max: 1,
-          requiresGeneral: true,
           requires: ["high-beastmaster"],
         },
       ],
@@ -3434,6 +3515,11 @@ export const rules = {
           min: 0,
           max: 1,
           points: 1000,
+        },
+        {
+          ids: ["gorgers", "giant"],
+          min: 0,
+          max: 3,
         },
       ],
     },

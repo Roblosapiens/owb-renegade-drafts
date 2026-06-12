@@ -347,6 +347,9 @@ const getRuleStats = (name) => {
 const renegadeStatsIdFallbacks = {
   "skaven-dregs": "skaven dregs renegade",
   "skink-cohorts": "skink cohorts renegade",
+  "infernal-overseer": "infernal castellan renegade",
+  "chaos-dwarf-warriors": "infernal guard renegade",
+  "blunderbuss-decimators": "infernal guard renegade",
 };
 
 export const getStats = (unit, armyComposition) => {
