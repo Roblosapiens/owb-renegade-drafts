@@ -8,7 +8,16 @@ import { normalizeRuleName } from "./string";
 export const getUnitRuleData = (unitName) => {
   const normalizedRuleName = normalizeRuleName(unitName);
   const synonym = synonyms[normalizedRuleName];
-  return rulesMap[synonym || normalizedRuleName];
+  const ruleData = rulesMap[synonym || normalizedRuleName];
+
+  if (ruleData || !unitName.includes("renegade")) {
+    return ruleData;
+  }
+
+  const baseRuleName = normalizeRuleName(unitName.replace(" {renegade}", ""));
+  const baseSynonym = synonyms[baseRuleName];
+
+  return rulesMap[baseSynonym || baseRuleName];
 };
 
 export const getUnitLeadership = ({ unit, list }) => {
@@ -324,13 +333,22 @@ export const getPage = (name) => {
   return page.replace(/,/g, "");
 };
 
-export const getStats = (unit, armyComposition) => {
-  const normalizedName =
-    unit.name_en.includes("renegade") && armyComposition?.includes("renegade")
-      ? normalizeRuleName(unit.name_en)
-      : normalizeRuleName(unit.name_en.replace(" {renegade}", ""));
+const getRuleStats = (name) => {
+  const normalizedName = normalizeRuleName(name);
   const synonym = synonyms[normalizedName];
-  const stats = rulesMap[synonym || normalizedName]?.stats || [];
+
+  return rulesMap[synonym || normalizedName]?.stats || [];
+};
+
+export const getStats = (unit, armyComposition) => {
+  const isRenegade =
+    unit.name_en.includes("renegade") && armyComposition?.includes("renegade");
+  const baseUnitName = unit.name_en.replace(" {renegade}", "");
+  let stats = getRuleStats(isRenegade ? unit.name_en : baseUnitName);
+
+  if (stats.length === 0 && isRenegade) {
+    stats = getRuleStats(baseUnitName);
+  }
   const activeMount = unit.mounts
     ? unit.mounts.find((mount) => mount.active)
     : null;
