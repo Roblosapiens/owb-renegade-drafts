@@ -120,7 +120,7 @@
           "name_cn": "雷牙兽",
           "name_fr": "Mégastodonte",
           "name_de": "Donnerhorn",
-          "points": 165
+          "points": 185
         }
       ],
       "items": [
@@ -129,7 +129,12 @@
           "name_cn": "魔法物品",
           "name_fr": "Objets Magiques",
           "name_de": "Magische Gegenstände",
-          "types": ["weapon", "armor", "talisman", "enchanted-item"],
+          "types": [
+            "weapon",
+            "armor",
+            "talisman",
+            "enchanted-item"
+          ],
           "selected": [],
           "maxPoints": 100
         },
@@ -138,7 +143,9 @@
           "name_cn": "威名",
           "name_de": "Großer Name",
           "name_fr": "Grand Nom",
-          "types": ["big-name"],
+          "types": [
+            "big-name"
+          ],
           "selected": [],
           "maxPoints": 0
         }
@@ -180,7 +187,9 @@
           "name_fr": "Porteur de la Grande Bannière",
           "points": 25,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 0
           }
         }
@@ -288,7 +297,7 @@
           "name_cn": "雷牙兽",
           "name_fr": "Mégastodonte",
           "name_de": "Donnerhorn",
-          "points": 165
+          "points": 185
         }
       ],
       "items": [
@@ -297,7 +306,12 @@
           "name_cn": "魔法物品",
           "name_fr": "Objets Magiques",
           "name_de": "Magische Gegenstände",
-          "types": ["weapon", "armor", "talisman", "enchanted-item"],
+          "types": [
+            "weapon",
+            "armor",
+            "talisman",
+            "enchanted-item"
+          ],
           "selected": [],
           "maxPoints": 50
         },
@@ -306,7 +320,9 @@
           "name_cn": "威名",
           "name_de": "Großer Name",
           "name_fr": "Grand Nom",
-          "types": ["big-name"],
+          "types": [
+            "big-name"
+          ],
           "selected": [],
           "maxPoints": 0
         }
@@ -411,7 +427,12 @@
           "name_cn": "魔法物品",
           "name_fr": "Objets Magiques",
           "name_de": "Magische Gegenstände",
-          "types": ["enchanted-item", "talisman", "weapon", "arcane-item"],
+          "types": [
+            "enchanted-item",
+            "talisman",
+            "weapon",
+            "arcane-item"
+          ],
           "selected": [],
           "maxPoints": 100
         },
@@ -420,12 +441,18 @@
           "name_cn": "威名",
           "name_de": "Großer Name",
           "name_fr": "Grand Nom",
-          "types": ["big-name"],
+          "types": [
+            "big-name"
+          ],
           "selected": [],
           "maxPoints": 0
         }
       ],
-      "lores": ["battle-magic", "elementalism", "illusion"],
+      "lores": [
+        "battle-magic",
+        "elementalism",
+        "illusion"
+      ],
       "specialRules": {
         "name_en": "Armour Bane (1), Fear, Impact Hits (2), Lore of the Great Maw {renegade}, Ogre Charge",
         "name_cn": "碎甲攻击(1), 恐惧, 撞击(2), 大胃之神法系, 食人魔冲锋",
@@ -523,7 +550,12 @@
           "name_cn": "魔法物品",
           "name_fr": "Objets Magiques",
           "name_de": "Magische Gegenstände",
-          "types": ["enchanted-item", "talisman", "weapon", "arcane-item"],
+          "types": [
+            "enchanted-item",
+            "talisman",
+            "weapon",
+            "arcane-item"
+          ],
           "selected": [],
           "maxPoints": 50
         },
@@ -532,12 +564,18 @@
           "name_cn": "威名",
           "name_de": "Großer Name",
           "name_fr": "Grand Nom",
-          "types": ["big-name"],
+          "types": [
+            "big-name"
+          ],
           "selected": [],
           "maxPoints": 0
         }
       ],
-      "lores": ["battle-magic", "elementalism", "illusion"],
+      "lores": [
+        "battle-magic",
+        "elementalism",
+        "illusion"
+      ],
       "specialRules": {
         "name_en": "Armour Bane (1), Fear, Impact Hits (2), Lore of the Great Maw {renegade}, Ogre Charge",
         "name_cn": "碎甲攻击(1), 恐惧, 撞击(2), 大胃之神法系, 食人魔冲锋",
@@ -646,7 +684,7 @@
           "name_cn": "雷牙兽",
           "name_fr": "Mégastodonte",
           "name_de": "Donnerhorn",
-          "points": 165
+          "points": 185
         }
       ],
       "items": [
@@ -655,7 +693,12 @@
           "name_cn": "魔法物品",
           "name_fr": "Objets Magiques",
           "name_de": "Magische Gegenstände",
-          "types": ["weapon", "armor", "talisman", "enchanted-item"],
+          "types": [
+            "weapon",
+            "armor",
+            "talisman",
+            "enchanted-item"
+          ],
           "selected": [],
           "maxPoints": 50
         },
@@ -664,7 +707,9 @@
           "name_cn": "威名",
           "name_de": "Großer Name",
           "name_fr": "Grand Nom",
-          "types": ["big-name"],
+          "types": [
+            "big-name"
+          ],
           "selected": [],
           "maxPoints": 0
         }
@@ -759,17 +804,283 @@
           "name_cn": "魔法物品",
           "name_fr": "Objets Magiques",
           "name_de": "Magische Gegenstände",
-          "types": ["weapon", "talisman", "enchanted-item", "arcane-item"],
+          "types": [
+            "weapon",
+            "talisman",
+            "enchanted-item",
+            "arcane-item"
+          ],
           "selected": [],
           "maxPoints": 50
         }
       ],
-      "lores": ["battle-magic", "elementalism"],
+      "lores": [
+        "battle-magic",
+        "elementalism"
+      ],
       "specialRules": {
         "name_en": "Armour Bane (1), Blessings of the Volcano God, Fear, Flaming Attacks, Impact Hits (1), Ogre Charge",
         "name_cn": "碎甲攻击(1), 火嘴神的祝福, 恐惧, 火焰攻击, 撞击(1), 食人魔冲锋",
         "name_fr": "Arme Perforante (1), Bénédictions du Dieu Volcan, Peur, Attaques Enflammées, Touches d’Impact (1), Charge Ogre",
         "name_de": "Rüstungsfluch (1), Segen des Vulkangottes, Angst, Flammenattacken, Aufpralltreffer (1), Ogerangriff"
+      }
+    },
+    {
+      "name_en": "Slaughtermaster {renegade}",
+      "name_cn": "屠宰大师",
+      "name_fr": "Désosseur",
+      "name_de": "Fleischermeister",
+      "id": "slaughtermaster",
+      "points": 180,
+      "command": [
+        {
+          "name_en": "General",
+          "name_cn": "主将",
+          "name_de": "General",
+          "name_fr": "Général",
+          "name_es": "General",
+          "points": 0
+        }
+      ],
+      "equipment": [
+        {
+          "name_en": "Hand weapon",
+          "name_cn": "单手武器",
+          "name_fr": "Arme de base",
+          "name_de": "Handwaffe",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        },
+        {
+          "name_en": "Additional hand weapon",
+          "name_cn": "额外单手武器",
+          "name_fr": "Arme de base additionnelle",
+          "name_de": "Zusätzliche Handwaffe",
+          "points": 4,
+          "perModel": true
+        }
+      ],
+      "armor": [],
+      "options": [
+        {
+          "name_en": "Butcher's Cauldron",
+          "name_cn": "屠夫大锅",
+          "name_fr": "Chaudron de Boucher",
+          "name_de": "Fleischerkessel",
+          "points": 30,
+          "perModel": true,
+          "minimum": 0,
+          "maximum": 0
+        },
+        {
+          "name_en": "Wizard",
+          "name_cn": "法师",
+          "name_de": "Wizard",
+          "name_fr": "Sorcier",
+          "name_es": "Hechicero",
+          "points": 0,
+          "active": true,
+          "alwaysActive": true,
+          "options": [
+            {
+              "name_en": "Level 3 Wizard",
+              "name_cn": "3级法师",
+              "name_de": "Level 3 Wizard",
+              "name_fr": "Sorcier de Niveau 3",
+              "name_es": "Hechicero de Nivel 3",
+              "points": 0,
+              "exclusive": true,
+              "active": true
+            },
+            {
+              "name_en": "Level 4 Wizard",
+              "name_cn": "4级法师",
+              "name_de": "Level 4 Wizard",
+              "name_fr": "Sorcier de Niveau 4",
+              "name_es": "Hechicero de Nivel 4",
+              "points": 30,
+              "exclusive": true
+            }
+          ]
+        }
+      ],
+      "mounts": [],
+      "items": [
+        {
+          "name_en": "Magic Items",
+          "name_cn": "魔法物品",
+          "name_fr": "Objets Magiques",
+          "name_de": "Magische Gegenstände",
+          "types": [
+            "enchanted-item",
+            "talisman",
+            "weapon",
+            "arcane-item"
+          ],
+          "selected": [],
+          "maxPoints": 100
+        },
+        {
+          "name_en": "Big Name",
+          "name_cn": "威名",
+          "name_de": "Großer Name",
+          "name_fr": "Grand Nom",
+          "types": [
+            "big-name"
+          ],
+          "selected": [],
+          "maxPoints": 0
+        }
+      ],
+      "lores": [
+        "battle-magic",
+        "elementalism",
+        "illusion"
+      ],
+      "specialRules": {
+        "name_en": "Armour Bane (1), Fear, Impact Hits (2), Lore of the Great Maw {renegade}, Ogre Charge",
+        "name_cn": "碎甲攻击(1), 恐惧, 撞击(2), 大胃之神法系, 食人魔冲锋",
+        "name_fr": "Arme Perforante (1), Peur, Touches d’Impact (2), Domaine de La Gueule, Charge Ogre",
+        "name_de": "Rüstungsfluch (1), Angst, Aufpralltreffer (2), Lehre des Großen Schlundes, Ogerangriff"
+      },
+      "notes": {
+        "name_en": "0-1 per 1000 points",
+        "name_cn": "每1000分0-1",
+        "name_fr": "0-1 par tranche de 1000 points",
+        "name_de": "0-1 pro 1.000 Punkte"
+      },
+      "armyComposition": {
+        "ok-renegade": {
+          "category": "characters"
+        }
+      }
+    },
+    {
+      "name_en": "Butcher {renegade}",
+      "name_cn": "屠夫",
+      "name_fr": "Boucher",
+      "name_de": "Fleischer",
+      "id": "butcher",
+      "points": 95,
+      "command": [
+        {
+          "name_en": "General",
+          "name_cn": "主将",
+          "name_de": "General",
+          "name_fr": "Général",
+          "name_es": "General",
+          "points": 0
+        }
+      ],
+      "equipment": [
+        {
+          "name_en": "Hand weapon",
+          "name_cn": "单手武器",
+          "name_fr": "Arme de base",
+          "name_de": "Handwaffe",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        },
+        {
+          "name_en": "Additional hand weapon",
+          "name_cn": "额外单手武器",
+          "name_fr": "Arme de base additionnelle",
+          "name_de": "Zusätzliche Handwaffe",
+          "points": 4,
+          "perModel": true
+        }
+      ],
+      "armor": [],
+      "options": [
+        {
+          "name_en": "Butcher's Cauldron",
+          "name_cn": "屠夫大锅",
+          "name_fr": "Chaudron de Boucher",
+          "name_de": "Fleischerkessel",
+          "points": 30
+        },
+        {
+          "name_en": "Wizard",
+          "name_cn": "法师",
+          "name_de": "Wizard",
+          "name_fr": "Sorcier",
+          "name_es": "Hechicero",
+          "points": 0,
+          "active": true,
+          "alwaysActive": true,
+          "options": [
+            {
+              "name_en": "Level 1 Wizard",
+              "name_cn": "1级法师",
+              "name_de": "Level 1 Wizard",
+              "name_fr": "Sorcier de Niveau 1",
+              "name_es": "Hechicero de Nivel 1",
+              "points": 0,
+              "exclusive": true,
+              "active": true
+            },
+            {
+              "name_en": "Level 2 Wizard",
+              "name_cn": "2级法师",
+              "name_de": "Level 2 Wizard",
+              "name_fr": "Sorcier de Niveau 2",
+              "name_es": "Hechicero de Nivel 2",
+              "points": 30,
+              "exclusive": true
+            }
+          ]
+        }
+      ],
+      "mounts": [],
+      "items": [
+        {
+          "name_en": "Magic Items",
+          "name_cn": "魔法物品",
+          "name_fr": "Objets Magiques",
+          "name_de": "Magische Gegenstände",
+          "types": [
+            "enchanted-item",
+            "talisman",
+            "weapon",
+            "arcane-item"
+          ],
+          "selected": [],
+          "maxPoints": 50
+        },
+        {
+          "name_en": "Big Name",
+          "name_cn": "威名",
+          "name_de": "Großer Name",
+          "name_fr": "Grand Nom",
+          "types": [
+            "big-name"
+          ],
+          "selected": [],
+          "maxPoints": 0
+        }
+      ],
+      "lores": [
+        "battle-magic",
+        "elementalism",
+        "illusion"
+      ],
+      "specialRules": {
+        "name_en": "Armour Bane (1), Fear, Impact Hits (2), Lore of the Great Maw {renegade}, Ogre Charge",
+        "name_cn": "碎甲攻击(1), 恐惧, 撞击(2), 大胃之神法系, 食人魔冲锋",
+        "name_fr": "Arme Perforante (1), Peur, Touches d’Impact (2), Domaine de La Gueule, Charge Ogre",
+        "name_de": "Rüstungsfluch (1), Angst, Aufpralltreffer (2), Lehre des Großen Schlundes, Ogerangriff"
+      },
+      "notes": {
+        "name_en": "",
+        "name_cn": "",
+        "name_fr": ""
+      },
+      "armyComposition": {
+        "ok-renegade": {
+          "category": "characters"
+        }
       }
     }
   ],
@@ -800,7 +1111,7 @@
         "ok-renegade": {
           "category": "core",
           "specialRules": {
-            "name_en": "Armour Bane (1), Close Order, Fear, Impact Hits (1), Ogre Charge, Monstrous Ranks {renegade}",
+            "name_en": "Armour Bane (1), Close Order, Fear, Impact Hits (1), Ogre Kingdoms Charge {renegade}, Ravenous Hunger",
             "name_cn": "碎甲攻击(1), 紧密阵型, 恐惧, 撞击(1), 食人魔冲锋, Monstrous Ranks",
             "name_de": "Rüstungsfluch (1), Geschlossene Ränge, Angst, Aufpralltreffer (1), Ogerangriff, Monstrous Ranks",
             "name_es": "Armour Bane (1), Close Order, Fear, Impact Hits (1), Ogre Charge, Monstrous Ranks",
@@ -828,7 +1139,9 @@
           "name_it": "Standard bearer",
           "points": 6,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 50
           },
           "options": [
@@ -952,7 +1265,7 @@
         "ok-renegade": {
           "category": "core",
           "specialRules": {
-            "name_en": "Close Order, Fear, Impact Hits (1), Ogre Charge, Monstrous Ranks {renegade}",
+            "name_en": "Close Order, Fear, Impact Hits (1), Ogre Kingdoms Charge {renegade}, Ravenous Hunger",
             "name_cn": "紧密阵型, 恐惧, 撞击(1), 食人魔冲锋, Monstrous Ranks",
             "name_de": "Angst, Aufpralltreffer (1), Geschlossene Ränge, Ogerangriff, Monstrous Ranks",
             "name_es": "Close Order, Fear, Impact Hits (1), Ogre Charge, Monstrous Ranks",
@@ -967,7 +1280,12 @@
           "name_cn": "大肚王(冠军)",
           "points": 7,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 25
           },
           "name_de": "Stahlwanst (Champion)",
@@ -980,7 +1298,9 @@
           "name_cn": "旗手",
           "points": 7,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 50
           },
           "name_de": "Standartenträger",
@@ -1297,7 +1617,7 @@
         "ok-renegade": {
           "category": "special",
           "specialRules": {
-            "name_en": "Close Order, Fear, Impact Hits (1), Ogre Charge, Monstrous Ranks {renegade}",
+            "name_en": "Close Order, Fear, Impact Hits (1), Ogre Kingdoms Charge {renegade}, Ravenous Hunger, Open Order",
             "name_cn": "紧密阵型, 恐惧, 撞击(1), 食人魔冲锋, Monstrous Ranks",
             "name_de": "Geschlossene Ränge, Angst, Aufpralltreffer (1), Ogerangriff, Monstrous Ranks",
             "name_es": "Close Order, Fear, Impact Hits (1), Ogre Charge, Monstrous Ranks",
@@ -1368,7 +1688,7 @@
       "items": [],
       "lores": [],
       "specialRules": {
-        "name_en": "Close Order, Fear, Impact Hits (1), Ogre Charge",
+        "name_en": "Close Order, Fear, Impact Hits (1), Ogre Kingdoms Charge {renegade}, Open Order, Ravenous Hunger",
         "name_cn": "紧密阵型, 恐惧, 撞击(1), 食人魔冲锋",
         "name_de": "Geschlossene Ränge, Angst, Aufpralltreffer (1), Ogerangriff",
         "name_es": "Close Order, Fear, Impact Hits (1), Ogre Charge",
@@ -1404,7 +1724,7 @@
         "ok-renegade": {
           "category": "special",
           "specialRules": {
-            "name_en": "Close Order, Fear, Impact Hits (1), Motley Crew, Ogre Charge, Monstrous Ranks {renegade}",
+            "name_en": "Close Order, Fear, Impact Hits (1), Motley Crew, Ogre Kingdoms Charge {renegade}, Ravenous Hunger",
             "name_cn": "紧密阵型, 恐惧, 撞击(1), 散兵游勇, 食人魔冲锋, Monstrous Ranks",
             "name_de": "Geschlossene Ränge, Angst, Aufpralltreffer (1), Zusammengewürfelter Haufen, Ogerangriff, Monstrous Ranks",
             "name_es": "Close Order, Fear, Impact Hits (1), Motley Crew, Ogre Charge, Monstrous Ranks",
@@ -1421,7 +1741,12 @@
           "name_de": "Vielfraß-Hauptmann (Champion)",
           "points": 7,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 50
           }
         },
@@ -1432,7 +1757,9 @@
           "name_de": "Standartenträger",
           "points": 7,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 50
           },
           "options": [
@@ -1647,7 +1974,12 @@
           "name_it": "Crusher (champion)",
           "points": 7,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 25
           },
           "options": [
@@ -1671,7 +2003,9 @@
           "name_cn": "旗手",
           "points": 7,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 50
           },
           "notes": {
@@ -1998,6 +2332,121 @@
         "name_fr": "Arme Perforante (2 - Rhinox uniquement), Ordre Serré, Peur, Première Charge, Touches d’Impact (D6+1), Grande Cible",
         "name_it": "Armour Bane (2 - Rhinox only), Close Order, Fear, First Charge, Impact Hits (D6+1), Large Target"
       }
+    },
+    {
+      "name_en": "Yhetees {renegade}",
+      "name_cn": "雪怪",
+      "name_de": "Yhetis",
+      "name_es": "Yhetees",
+      "name_fr": "Yétis",
+      "name_it": "Yhetees",
+      "id": "yhetees",
+      "points": 43,
+      "minimum": 3,
+      "maximum": 0,
+      "regimentalUnit": false,
+      "detachment": false,
+      "command": [
+        {
+          "name_en": "Greyback",
+          "name_cn": "灰背",
+          "name_de": "Silberrücken",
+          "name_es": "Greyback",
+          "name_fr": "Dos-gris",
+          "name_it": "Greyback",
+          "points": 7
+        }
+      ],
+      "equipment": [
+        {
+          "name_en": "Grimfrost weapons",
+          "name_cn": "寒霜武器",
+          "name_de": "Eiswaffen",
+          "name_es": "Grimfrost weapons",
+          "name_fr": "Arme de Sinistregivre",
+          "name_it": "Grimfrost weapons",
+          "points": 0,
+          "perModel": false,
+          "active": true
+        }
+      ],
+      "armor": [],
+      "options": [
+        {
+          "name_en": "Scouts",
+          "name_cn": "侦察",
+          "name_de": "Kundschafter",
+          "name_es": "Scouts",
+          "name_fr": "Éclaireurs",
+          "name_it": "Scouts",
+          "points": 3,
+          "perModel": true,
+          "notes": {
+            "name_en": "0-1 per 1000 points",
+            "name_cn": "每1000分0-1",
+            "name_de": "0-1 pro 1000 Punkte",
+            "name_es": "0-1 por cada 1000 puntos",
+            "name_fr": "0-1 par tranche de 1000 points"
+          }
+        },
+        {
+          "name_en": "Vanguard",
+          "name_cn": "先锋",
+          "name_de": "Vorhut",
+          "name_es": "Vanguard",
+          "name_fr": "Avant-garde",
+          "name_it": "Vanguard",
+          "points": 2,
+          "perModel": true,
+          "notes": {
+            "name_en": "0-1 per 1000 points",
+            "name_cn": "每1000分0-1",
+            "name_de": "0-1 pro 1000 Punkte",
+            "name_es": "0-1 por cada 1000 puntos",
+            "name_fr": "0-1 par tranche de 1000 points"
+          }
+        },
+        {
+          "name_en": "Ambushers",
+          "name_cn": "伏击",
+          "name_de": "Ambushers",
+          "name_es": "Ambushers",
+          "name_fr": "Embusqueurs",
+          "points": 3,
+          "perModel": true,
+          "minimum": 0,
+          "maximum": 0,
+          "notes": {
+            "name_en": "0-1 unit per 1000 points may purchase this upgrade",
+            "name_cn": "0-1单位/每1000分可购买此升级",
+            "name_fr": "0-1 unité par tranche de 1000 points peut acheter cette amélioration"
+          }
+        }
+      ],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Armoured Hide (1), Fear, Flammable, Loner, Move Through Cover, Numbing Chill, Open Order, Swiftstride",
+        "name_cn": "坚硬皮肤(1), 恐惧, 易燃, 独行, 穿行掩体, 麻木寒意, 开放阵型, 快速行进",
+        "name_de": "Zähe Haut (1), Angst, Brennbar, Einzelgänger, Durch Deckung bewegen, Lähmende Kälte, Offene Ränge, Schnelle Bewegung",
+        "name_es": "Armoured Hide (1), Fear, Flammable, Loner, Move Through Cover, Numbing Chill, Open Order, Swiftstride",
+        "name_fr": "Peau Blindée (1), Peur, Inflammable, Solitaire, Mouvement à Couvert, Frisson Paralysant, Ordre Dispersé, Rapide",
+        "name_it": "Armoured Hide (1), Fear, Flammable, Loner, Move Through Cover, Numbing Chill, Open Order, Swiftstride"
+      },
+      "notes": {
+        "name_en": "",
+        "name_cn": "",
+        "name_de": "",
+        "name_es": "",
+        "name_fr": "",
+        "name_it": ""
+      },
+      "armyComposition": {
+        "ok-renegade": {
+          "category": "special"
+        }
+      }
     }
   ],
   "rare": [
@@ -2182,6 +2631,11 @@
         "name_es": "",
         "name_fr": "",
         "name_it": ""
+      },
+      "armyComposition": {
+        "ok-renegade": {
+          "category": "rare"
+        }
       }
     },
     {
@@ -2209,7 +2663,12 @@
           }
         },
         "ok-renegade": {
-          "category": "rare"
+          "category": "rare",
+          "specialRules": {
+            "name_en": "Armoured Hide (2), Open Order, Ravenous Hunger, Regeneration (6+), Skirmishers, Vanguard",
+            "name_cn": "覆甲兽皮(2), 疏开阵型, 贪婪饥肠, 重生(6+), 散兵, 先锋",
+            "name_fr": "Peau Blindée (2), Ordre Ouvert, Faim Vorace, Régénération (6+), Tirailleurs, Avant-garde"
+          }
         }
       },
       "command": [],
@@ -2271,6 +2730,72 @@
         "name_es": "Ambushers, Close Order, Fear, Frenzy, Ravenous Hunger, Regeneration (6+), Swiftstride, Unbreakable",
         "name_fr": "Embusqueurs, Ordre Serré, Peur, Frénésie, Faim Dévorante, Régénération (6+), Rapide, Indémoralisable",
         "name_it": "Ambushers, Close Order, Fear, Frenzy, Ravenous Hunger, Regeneration (6+), Swiftstride, Unbreakable"
+      }
+    },
+    {
+      "name_en": "Stonehorn Riders {renegade}",
+      "name_cn": "石角兽骑兵",
+      "name_de": "Steinyakreiter",
+      "name_es": "Stonehorn Riders",
+      "name_fr": "Chevaucheurs de Mastauroc",
+      "name_it": "Stonehorn Riders",
+      "id": "stonehorn-riders",
+      "points": 220,
+      "regimentalUnit": false,
+      "detachment": false,
+      "command": [],
+      "equipment": [
+        {
+          "name_en": "Hand weapon, Horns of stone (Stonehorn), Harpoon launcher (Ogre Crew), Chaintrap (Ogre Beast Rider)",
+          "name_cn": "单手武器, 石角(石角兽), 鱼叉发射器(食人魔组员), 投索陷阱(食人魔野兽骑手)",
+          "name_fr": "Arme de base, Cornes de pierre (Mastauroc), Lance-harpon (Servant Ogre), Croque-monsieur (Chevaucheur Ogre)",
+          "name_de": "Handwaffen, Steinerne Hörner (Steinyak), Harpunenschleuder (Oger-Besatzung), Ketten-Fangeisen (Ogerreiter)",
+          "points": 0,
+          "perModel": false,
+          "active": true
+        },
+        {
+          "name_en": "Hand weapon, Horns of stone (Stonehorn), Harpoon launcher (Ogre Crew), Blood vulture (Ogre Beast Rider)",
+          "name_cn": "单手武器, 石角(石角兽), 鱼叉发射器(食人魔组员), 寻血秃鹫(食人魔野兽骑手)",
+          "name_fr": "Arme de base, Cornes de pierre (Mastauroc), Lance-harpon (Servant Ogre), Vautour de sang (Chevaucheur Ogre)",
+          "name_de": "Handwaffen, Steinerne Hörner (Steinyak), Harpunenschleuder (Oger-Besatzung), Blutgeier (Ogerreiter)",
+          "points": 5,
+          "perModel": false
+        }
+      ],
+      "armor": [],
+      "options": [
+        {
+          "name_en": "Harpoon launcher (Ogre Beast Rider)",
+          "name_cn": "鱼叉发射器(食人魔野兽骑手)",
+          "name_de": "Harpunenschleuder (Ogerreiter)",
+          "name_es": "Harpoon launcher (Ogre Beast Rider)",
+          "name_fr": "Lance-harpon (Chevaucheur Ogre)",
+          "name_it": "Harpoon launcher (Ogre Beast Rider)",
+          "points": 8
+        }
+      ],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Armour Bane (2 - Stonehorn only), Close Order, First Charge, Howdah, Impact Hits (D6+1), Large Target, Stone Skeleton, Swiftstride, Terror, Thunderous Charge",
+        "name_cn": "碎甲攻击(2 - 仅限石角兽), 紧密阵型, 先行冲锋, 驼轿, 撞击(D6+1), 大型目标, 石化骨架, 快速行进, 惊骇, 雷霆冲锋",
+        "name_de": "Rüstungsfluch (2 - Nur Steinyak), Geschlossene Ränge, Erster Angriff, Sänfte, Aufpralltreffer (W6+1), Großes Ziel, Steinernes Skelett, Schnelle Bewegung, Entsetzen, Donnernder Angriff",
+        "name_es": "Armour Bane (2 - Stonehorn only), Close Order, First Charge, Howdah, Impact Hits (D6+1), Large Target, Stone Skeleton, Swiftstride, Terror, Thunderous Charge",
+        "name_fr": "Arme Perforante (2 - Mastauroc uniquement), Ordre Serré, Première Charge, Howdah, Touches d’Impact (D6+1), Grande Cible, Squelette de Pierre, Rapide, Terreur, Charge Tonnerre",
+        "name_it": "Armour Bane (2 - Stonehorn only), Close Order, First Charge, Howdah, Impact Hits (D6+1), Large Target, Stone Skeleton, Swiftstride, Terror, Thunderous Charge"
+      },
+      "notes": {
+        "name_en": "0-1 Stonehorn Riders per 1000 points",
+        "name_cn": "每1000分0-1",
+        "name_fr": "0-1 Chevaucheurs de Mastauroc par tranche de 1000 points",
+        "name_de": "0-1 Steinyakreiter pro 1.000 Punkte"
+      },
+      "armyComposition": {
+        "ok-renegade": {
+          "category": "rare"
+        }
       }
     }
   ],

@@ -5527,7 +5527,10 @@
       "points": 10,
       "type": "elven-honour",
       "name": "chracian hunter",
-      "armyComposition": ["high-elf-realms", "the-chracian-warhost"],
+      "armyComposition": [
+        "high-elf-realms",
+        "the-chracian-warhost"
+      ],
       "onePerArmy": false
     },
     {
@@ -5570,7 +5573,10 @@
       "points": 0,
       "type": "elven-honour",
       "name": "sea guard",
-      "armyComposition": ["high-elf-realms", "sea-guard-garrison"],
+      "armyComposition": [
+        "high-elf-realms",
+        "sea-guard-garrison"
+      ],
       "onePerArmy": false
     }
   ],
@@ -5776,6 +5782,15 @@
       "type": "arcane-item",
       "onePerArmy": false,
       "name": "scroll of binding"
+    },
+    {
+      "name_en": "Armour of Bazherak the Cruel {renegade}",
+      "name_fr": "Armure de Bazherak le Cruel",
+      "points": 40,
+      "type": "armor",
+      "onePerArmy": true,
+      "name": "armour of bazherak renegade",
+      "armyComposition": "cd-renegade"
     }
   ],
   "lizardmen": [
@@ -6388,6 +6403,24 @@
       "type": "arcane-item",
       "onePerArmy": true,
       "name": "tome of furion"
+    },
+    {
+      "name_en": "Whip of Agony {renegade}",
+      "name_fr": "Fouet de l'Agonie",
+      "points": 20,
+      "type": "weapon",
+      "onePerArmy": true,
+      "name": "whip of agony renegade",
+      "armyComposition": "de-renegade"
+    },
+    {
+      "name_en": "Banner of Nagarythe {renegade}",
+      "name_fr": "Bannière de Nagarythe",
+      "points": 50,
+      "type": "banner",
+      "onePerArmy": true,
+      "name": "banner of nagarythe renegade",
+      "armyComposition": "de-renegade"
     }
   ],
   "ogre-kingdoms": [
@@ -6591,6 +6624,26 @@
       "type": "arcane-item",
       "onePerArmy": true,
       "name": "grut's sickle"
+    },
+    {
+      "name_en": "Dragonhide Banner {renegade}",
+      "name_fr": "Bannière en Peau de Dragon",
+      "points": 75,
+      "type": "banner",
+      "onePerArmy": true,
+      "name": "dragonhide banner renegade",
+      "armyComposition": "ok-renegade"
+    },
+    {
+      "name_en": "Tooth-Gnoblar*",
+      "name_fr": "Dent-Gnoblar*",
+      "points": 10,
+      "type": "arcane-item",
+      "stackable": true,
+      "maximum": 3,
+      "onePerArmy": false,
+      "name": "tooth-gnoblar",
+      "armyComposition": "ok-renegade"
     }
   ],
   "big-names": [
@@ -6670,6 +6723,23 @@
       "type": "big-name",
       "onePerArmy": false,
       "name": "deathcheater"
+    },
+    {
+      "name_en": "Wallcrusher",
+      "name_fr": "Brise-mur",
+      "points": 30,
+      "type": "big-name",
+      "onePerArmy": true,
+      "name": "wallcrusher"
+    },
+    {
+      "name_en": "Beastkiller {renegade}",
+      "name_fr": "Trucide-fauve",
+      "points": 40,
+      "type": "big-name",
+      "onePerArmy": true,
+      "name": "beastkiller renegade",
+      "armyComposition": "ok-renegade"
     }
   ],
   "skaven": [
@@ -7209,6 +7279,82 @@
       "stackable": true,
       "maximum": 1,
       "name": "daemonic robes"
+    },
+    {
+      "name_en": "Chromatic Tome*",
+      "name_fr": "Tome Chromatique*",
+      "points": 20,
+      "type": "daemonic-gift-common",
+      "onePerArmy": false,
+      "stackable": true,
+      "maximum": 1,
+      "name": "chromatic tome",
+      "armyComposition": "doc-renegade"
+    },
+    {
+      "name_en": "Exalted Locus",
+      "name_fr": "Locus Exalté",
+      "points": 60,
+      "type": "daemonic-gift-common",
+      "onePerArmy": true,
+      "name": "exalted locus",
+      "armyComposition": "doc-renegade"
+    },
+    {
+      "name_de": "Ätherklinge",
+      "name_en": "Æther Blade {renegade}",
+      "name_cn": "以太之刃",
+      "name_fr": "Lame d’Éther",
+      "name_it": "Æther Lama",
+      "points": 50,
+      "type": "daemonic-gift-common",
+      "onePerArmy": true,
+      "stackable": true,
+      "maximum": 1,
+      "name": "æther blade renegade",
+      "armyComposition": "doc-renegade"
+    },
+    {
+      "name-fr": "Nombreux Bras*",
+      "name_de": "Vielarmiges Monstrum*",
+      "name_en": "Many Arms* {renegade}",
+      "name_cn": "额外臂膀*",
+      "name_it": "Many Arms*",
+      "points": 30,
+      "stackable": true,
+      "type": "daemonic-gift-common",
+      "name_fr": "Bras Multiples*",
+      "onePerArmy": false,
+      "name": "many arms renegade",
+      "armyComposition": "doc-renegade"
+    },
+    {
+      "name_de": "Geflügelter Alptraum",
+      "name_en": "Winged Horror {renegade}",
+      "name_cn": "有翼惧物",
+      "name_fr": "Horreur Ailée",
+      "name_it": "Winged Horror",
+      "points": 50,
+      "type": "daemonic-gift-common",
+      "onePerArmy": true,
+      "stackable": true,
+      "maximum": 1,
+      "name": "winged horror renegade",
+      "armyComposition": "doc-renegade"
+    },
+    {
+      "name_de": "Dämonische Roben",
+      "name_en": "Daemonic Robes {renegade}",
+      "name_cn": "恶魔长袍",
+      "name_fr": "Robes Démoniaques",
+      "name_it": "Daemonic Robes",
+      "points": 35,
+      "type": "daemonic-gift-common",
+      "onePerArmy": true,
+      "stackable": true,
+      "maximum": 1,
+      "name": "daemonic robes renegade",
+      "armyComposition": "doc-renegade"
     }
   ],
   "daemonic-icons-common": [
@@ -7244,6 +7390,30 @@
       "type": "daemonic-icon-common",
       "onePerArmy": true,
       "name": "standard of chaotic glory"
+    },
+    {
+      "name_de": "Banner des unheiligen Sieges",
+      "name_en": "Banner of Unholy Victory {renegade}",
+      "name_cn": "不洁胜利之旗",
+      "name_fr": "Bannière de Victoire Impie",
+      "name_it": "Banner of Unholy Victory",
+      "points": 50,
+      "type": "daemonic-icon-common",
+      "onePerArmy": true,
+      "name": "banner of unholy victory renegade",
+      "armyComposition": "doc-renegade"
+    },
+    {
+      "name_de": "Totem des ewigen Krieges",
+      "name_en": "Totem of Eternal War {renegade}",
+      "name_cn": "永恒之战图腾",
+      "name_fr": "Totem de la Guerre Éternelle",
+      "name_it": "Totem of Eternal War",
+      "points": 45,
+      "type": "daemonic-icon-common",
+      "onePerArmy": true,
+      "name": "totem of eternal war renegade",
+      "armyComposition": "doc-renegade"
     }
   ],
   "daemonic-gifts-khorne": [
