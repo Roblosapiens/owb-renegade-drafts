@@ -3285,13 +3285,7 @@ export const rules = {
       maxPercent: 50,
       units: [
         {
-          ids: ["slann-mage-priest"],
-          min: 0,
-          max: 1,
-          points: 1500,
-        },
-        {
-          ids: ["saurus-oldblood"],
+          ids: ["slann-mage-priest", "saurus-oldblood"],
           min: 0,
           max: 1,
           points: 1000,

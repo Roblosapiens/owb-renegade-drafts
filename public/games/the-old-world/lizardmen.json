@@ -22,13 +22,13 @@
             "name_fr": "Bouclier Arcanique, Sang Froid, Vol (8), Domaine de Lustrie {renegade}, Sagesse des Anciens, Palanquin"
           },
           "notes": {
-            "name_en": "0-1 Slann Mage-Priest per 1500 points",
-            "name_cn": "每1500分0-1 Slann Mage-Priest",
-            "name_de": "0-1 Slann Mage-Priest per 1500 points",
-            "name_es": "0-1 Slann Mage-Priest per 1500 points",
-            "name_fr": "0-1 Prêtre-Mage Slann par tranche de 1500 points",
-            "name_it": "0-1 Slann Mage-Priest per 1500 points",
-            "name_pl": "0-1 Slann Mage-Priest per 1500 points"
+            "name_en": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points. May purchase 0-3 Disciplines of the Old Ones up to a total of 100 points",
+            "name_cn": "每1000分0-1 Slann Mage-Priest或0-1 Saurus Oldblood. May purchase 0-3 Disciplines of the Old Ones up to a total of 100 points",
+            "name_de": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points. May purchase 0-3 Disciplines of the Old Ones up to a total of 100 points",
+            "name_es": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points. May purchase 0-3 Disciplines of the Old Ones up to a total of 100 points",
+            "name_fr": "0-1 Prêtre-Mage Slann ou 0-1 Sang Ancien Saurus par tranche de 1000 points. Peut acheter 0-3 Disciplines Ancestrales jusqu'à un total de 100 points",
+            "name_it": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points. May purchase 0-3 Disciplines of the Old Ones up to a total of 100 points",
+            "name_pl": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points. May purchase 0-3 Disciplines of the Old Ones up to a total of 100 points"
           }
         }
       },
@@ -106,7 +106,12 @@
           "name_fr": "Disciplines Ancestrales",
           "types": ["discipline-old-ones"],
           "selected": [],
-          "maxPoints": 0
+          "maxPoints": 0,
+          "armyComposition": {
+            "lm-renegade": {
+              "maxPoints": 100
+            }
+          }
         }
       ],
       "lores": [
@@ -147,14 +152,21 @@
         },
         "lm-renegade": {
           "category": "characters",
+          "specialRules": {
+            "name_en": "Cold Blooded {renegade}, Obsidian Blades, Predatory Fighter, Rallying Cry, Armoured Hide (2)",
+            "name_cn": "冷血 {renegade}, 黑曜石之刃, 掠食性斗士, 集结战吼, 坚硬皮肤(2)",
+            "name_de": "Cold Blooded, Obsidian Blades, Predatory Fighter, Rallying Cry, Armoured Hide (2)",
+            "name_es": "Cold Blooded, Obsidian Blades, Predatory Fighter, Rallying Cry, Armoured Hide (2)",
+            "name_fr": "Sang Froid, Lames d’Obsidienne, Combattant Prédateur, Cri de Ralliement, Peau Blindée (2)"
+          },
           "notes": {
-            "name_en": "0-1 Saurus Oldblood per 1000 points",
-            "name_cn": "每1000分0-1 Saurus Oldblood",
-            "name_de": "0-1 Saurus Oldblood per 1000 points",
-            "name_es": "0-1 Saurus Oldblood per 1000 points",
-            "name_fr": "0-1 Sang Ancien Saurus par tranche de 1000 points",
-            "name_it": "0-1 Saurus Oldblood per 1000 points",
-            "name_pl": "0-1 Saurus Oldblood per 1000 points"
+            "name_en": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points",
+            "name_cn": "每1000分0-1 Slann Mage-Priest或0-1 Saurus Oldblood",
+            "name_de": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points",
+            "name_es": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points",
+            "name_fr": "0-1 Prêtre-Mage Slann ou 0-1 Sang Ancien Saurus par tranche de 1000 points",
+            "name_it": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points",
+            "name_pl": "0-1 Slann Mage-Priest or 0-1 Saurus Oldblood per 1000 points"
           }
         }
       },
@@ -231,7 +243,18 @@
           "name_fr": "Armure lourde (Peau écailleuse)",
           "points": 0,
           "perModel": true,
-          "active": true
+          "active": true,
+          "armyComposition": "lizardmen"
+        },
+        {
+          "name_en": "Light armour",
+          "name_cn": "轻甲",
+          "name_de": "Light armour",
+          "name_es": "Light armour",
+          "name_fr": "Armure légère",
+          "points": 3,
+          "perModel": true,
+          "armyComposition": "lm-renegade"
         }
       ],
       "options": [
@@ -303,6 +326,21 @@
       "name_fr": "Vétéran Scarifié Saurus",
       "id": "saurus-scar-veteran",
       "points": 90,
+      "armyComposition": {
+        "lizardmen": {
+          "category": "characters"
+        },
+        "lm-renegade": {
+          "category": "characters",
+          "specialRules": {
+            "name_en": "Cold Blooded {renegade}, Obsidian Blades, Predatory Fighter, Rallying Cry, Armoured Hide (1)",
+            "name_cn": "冷血 {renegade}, 黑曜石之刃, 掠食性斗士, 集结战吼, 坚硬皮肤(1)",
+            "name_de": "Cold Blooded, Obsidian Blades, Predatory Fighter, Rallying Cry, Armoured Hide (1)",
+            "name_es": "Cold Blooded, Obsidian Blades, Predatory Fighter, Rallying Cry, Armoured Hide (1)",
+            "name_fr": "Sang Froid, Lames d’Obsidienne, Combattant Prédateur, Cri de Ralliement, Peau Blindée (1)"
+          }
+        }
+      },
       "command": [
         {
           "name_en": "General",
@@ -387,7 +425,18 @@
           "name_fr": "Armure lourde (Peau écailleuse)",
           "points": 0,
           "perModel": true,
-          "active": true
+          "active": true,
+          "armyComposition": "lizardmen"
+        },
+        {
+          "name_en": "Light armour",
+          "name_cn": "轻甲",
+          "name_de": "Light armour",
+          "name_es": "Light armour",
+          "name_fr": "Armure légère",
+          "points": 3,
+          "perModel": true,
+          "armyComposition": "lm-renegade"
         }
       ],
       "options": [
@@ -480,7 +529,14 @@
           }
         },
         "lm-renegade": {
-          "category": "characters"
+          "category": "characters",
+          "specialRules": {
+            "name_en": "Arcane Vassal, Armoured Hide (1), Aquatic**, Cold Blooded {renegade}, Lore of Lustria {renegade}",
+            "name_cn": "奥术构造, 坚硬皮肤(1), 水生**, 冷血 {renegade}, 露丝契亚法系",
+            "name_de": "Arcane Vassal, Armoured Hide (1), Aquatic**, Cold Blooded, Lore of Lustria",
+            "name_es": "Arcane Vassal, Armoured Hide (1), Aquatic**, Cold Blooded, Lore of Lustria",
+            "name_fr": "Vassal Magique, Peau Blindée (1), Aquatique**, Sang Froid, Domaine de Lustrie"
+          }
         }
       },
       "command": [
@@ -513,7 +569,8 @@
           "name_fr": "Armure légère (Peau calleuse)*",
           "points": 0,
           "perModel": true,
-          "active": true
+          "active": true,
+          "armyComposition": "lizardmen"
         }
       ],
       "options": [
@@ -566,6 +623,7 @@
           "name_es": "Ancient Stegadon",
           "name_fr": "Stégadon Ancestral",
           "points": 230,
+          "armyComposition": "lizardmen",
           "options": [
             {
               "name_en": "Giant bow",
@@ -587,6 +645,39 @@
               "name_cn": "诸神引擎",
               "exclusive": true,
               "points": 25,
+              "name_fr": "Machine des Dieux"
+            }
+          ]
+        },
+        {
+          "name_en": "Ancient Stegadon {renegade}",
+          "name_cn": "远古三角龙 {renegade}",
+          "name_de": "Ancient Stegadon",
+          "name_es": "Ancient Stegadon",
+          "name_fr": "Stégadon Ancestral",
+          "points": 210,
+          "armyComposition": "lm-renegade",
+          "options": [
+            {
+              "name_en": "Giant bow",
+              "name_cn": "巨弓",
+              "points": 0,
+              "exclusive": true,
+              "active": true,
+              "name_fr": "Arc géant"
+            },
+            {
+              "name_en": "Giant blowpipes",
+              "name_cn": "巨型吹管",
+              "exclusive": true,
+              "points": 0,
+              "name_fr": "Sarbacanes géantes"
+            },
+            {
+              "name_en": "Engine of the Gods",
+              "name_cn": "诸神引擎",
+              "exclusive": true,
+              "points": 35,
               "name_fr": "Machine des Dieux"
             }
           ]
@@ -635,6 +726,21 @@
       "name_fr": "Chef Skink",
       "id": "skink-chief",
       "points": 45,
+      "armyComposition": {
+        "lizardmen": {
+          "category": "characters"
+        },
+        "lm-renegade": {
+          "category": "characters",
+          "specialRules": {
+            "name_en": "Armoured Hide (1), Aquatic**, Cold Blooded {renegade}, Poisoned Attacks**",
+            "name_cn": "坚硬皮肤(1), 水生**, 冷血 {renegade}, 淬毒攻击**",
+            "name_de": "Armoured Hide (1), Aquatic**, Cold Blooded, Poisoned Attacks**",
+            "name_es": "Armoured Hide (1), Aquatic**, Cold Blooded, Poisoned Attacks**",
+            "name_fr": "Peau Blindée (1), Aquatique**, Sang Froid, Attaques Empoisonnées**"
+          }
+        }
+      },
       "command": [
         {
           "name_en": "General",
@@ -719,7 +825,18 @@
           "name_fr": "Armure légère (Peau calleuse)",
           "points": 0,
           "perModel": true,
-          "active": true
+          "active": true,
+          "armyComposition": "lizardmen"
+        },
+        {
+          "name_en": "Light armour",
+          "name_cn": "轻甲",
+          "name_de": "Light armour",
+          "name_es": "Light armour",
+          "name_fr": "Armure légère",
+          "points": 3,
+          "perModel": true,
+          "armyComposition": "lm-renegade"
         }
       ],
       "options": [
@@ -733,6 +850,26 @@
           "perModel": true,
           "minimum": 0,
           "maximum": 0
+        },
+        {
+          "name_en": "Scouts",
+          "name_cn": "侦察",
+          "name_de": "Scouts",
+          "name_es": "Scouts",
+          "name_fr": "Éclaireurs",
+          "points": 10,
+          "exclusive": true,
+          "armyComposition": "lm-renegade"
+        },
+        {
+          "name_en": "Vanguard",
+          "name_cn": "先锋",
+          "name_de": "Vanguard",
+          "name_es": "Vanguard",
+          "name_fr": "Avant-garde",
+          "points": 5,
+          "exclusive": true,
+          "armyComposition": "lm-renegade"
         }
       ],
       "mounts": [
@@ -768,6 +905,33 @@
           "name_es": "Stegadon",
           "name_fr": "Stégadon",
           "points": 215,
+          "armyComposition": "lizardmen",
+          "options": [
+            {
+              "name_en": "Giant bow",
+              "name_cn": "巨弓",
+              "points": 0,
+              "exclusive": true,
+              "active": true,
+              "name_fr": "Arc géant"
+            },
+            {
+              "name_en": "Giant blowpipes",
+              "name_cn": "巨型吹管",
+              "exclusive": true,
+              "points": 0,
+              "name_fr": "Sarbacanes géantes"
+            }
+          ]
+        },
+        {
+          "name_en": "Stegadon {renegade}",
+          "name_cn": "三角龙 {renegade}",
+          "name_de": "Stegadon",
+          "name_es": "Stegadon",
+          "name_fr": "Stégadon",
+          "points": 195,
+          "armyComposition": "lm-renegade",
           "options": [
             {
               "name_en": "Giant bow",
@@ -828,6 +992,11 @@
       "points": 14,
       "minimum": 10,
       "maximum": 0,
+      "armyComposition": {
+        "lizardmen": {
+          "category": "core"
+        }
+      },
       "command": [
         {
           "name_en": "Spawn Leader (champion)",
@@ -928,8 +1097,241 @@
       }
     },
     {
+      "name_en": "Saurus Warriors {renegade}",
+      "name_cn": "蜥人勇士 {renegade}",
+      "name_de": "Saurus Warriors",
+      "name_es": "Saurus Warriors",
+      "name_fr": "Guerriers Saurus",
+      "name_it": "Saurus Warriors",
+      "id": "saurus-warrior",
+      "points": 12,
+      "minimum": 10,
+      "maximum": 0,
+      "armyComposition": {
+        "lm-renegade": {
+          "category": "core"
+        }
+      },
+      "command": [
+        {
+          "name_en": "Spawn Leader (champion)",
+          "name_cn": "猎群领袖(冠军)",
+          "name_de": "Spawn Leader (champion)",
+          "name_es": "Spawn Leader (champion)",
+          "name_fr": "Premier de Couvée (champion)",
+          "points": 6,
+          "magic": {
+            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "maxPoints": 25
+          },
+          "name_it": "Spawn Leader (champion)"
+        },
+        {
+          "name_en": "Standard bearer",
+          "name_cn": "旗手",
+          "name_de": "Standard bearer",
+          "name_es": "Standard bearer",
+          "name_fr": "Porte-étendard",
+          "points": 6,
+          "magic": {
+            "types": ["banner"],
+            "maxPoints": 50
+          },
+          "notes": {
+            "name_en": "0-1 unit per 1000 points may purchase a magic standard worth up to 50 points",
+            "name_cn": "每1000分0-1个单位可以购买最多50分的魔法战旗",
+            "name_de": "0-1 unit per 1000 points may purchase a magic standard worth up to 50 points",
+            "name_es": "0-1 unit per 1000 points may purchase a magic standard worth up to 50 points",
+            "name_fr": "0-1 unité par tranche de 1000 points peut acheter une bannière magique d'une valeur maximale de 50 points"
+          },
+          "name_it": "Standard bearer"
+        },
+        {
+          "name_en": "Musician",
+          "name_cn": "乐手",
+          "name_de": "Musician",
+          "name_es": "Musician",
+          "name_fr": "Musicien",
+          "points": 6,
+          "name_it": "Musician"
+        }
+      ],
+      "equipment": [
+        {
+          "name_en": "Hand weapons, Shields",
+          "name_cn": "单手武器, 盾牌",
+          "name_de": "Hand weapons, Shields",
+          "name_es": "Hand weapons, Shields",
+          "name_fr": "Armes de base, Boucliers",
+          "points": 0,
+          "perModel": true,
+          "active": true,
+          "name_it": "Hand weapons, Shields"
+        },
+        {
+          "name_en": "Thrusting spears, Shields",
+          "name_cn": "刺矛, 盾牌",
+          "name_de": "Thrusting spears, Shields",
+          "name_es": "Thrusting spears, Shields",
+          "name_fr": "Lances d’infanterie, Boucliers",
+          "points": 1,
+          "perModel": true,
+          "name_it": "Thrusting spears, Shields"
+        }
+      ],
+      "armor": [],
+      "options": [
+        {
+          "name_en": "Shieldwall",
+          "name_cn": "盾墙",
+          "name_de": "Shieldwall",
+          "name_es": "Shieldwall",
+          "name_it": "Shieldwall",
+          "name_fr": "Mur de Boucliers",
+          "points": 1,
+          "perModel": true,
+          "notes": {
+            "name_en": "0-1 unit per 1000 points may have the Shieldwall special rule",
+            "name_cn": "每1000分0-1个单位可以选择获得盾墙特殊规则",
+            "name_de": "0-1 unit per 1000 points may have the Shieldwall special rule",
+            "name_es": "0-1 unit per 1000 points may have the Shieldwall special rule",
+            "name_fr": "0-1 unité par tranche de 1000 points peut avoir la règle spéciale Mur de Boucliers"
+          }
+        },
+        {
+          "name_en": "Drilled",
+          "name_cn": "受训",
+          "name_de": "Drilled",
+          "name_es": "Drilled",
+          "name_it": "Drilled",
+          "name_fr": "Bien Entraînés",
+          "points": 1,
+          "perModel": true,
+          "notes": {
+            "name_en": "0-1 unit per 1000 points may have the Drilled special rule",
+            "name_cn": "每1000分0-1个单位可以选择获得受训特殊规则",
+            "name_de": "0-1 unit per 1000 points may have the Drilled special rule",
+            "name_es": "0-1 unit per 1000 points may have the Drilled special rule",
+            "name_fr": "0-1 unité par tranche de 1000 points peut avoir la règle spéciale Bien Entraînés"
+          }
+        }
+      ],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Close Order, Cold Blooded {renegade}, Obsidian Blades, Predatory Fighter, Armoured Hide (2)",
+        "name_cn": "紧密阵型, 冷血 {renegade}, 黑曜石之刃, 掠食性斗士, 坚硬皮肤(2)",
+        "name_de": "Close Order, Cold Blooded, Obsidian Blades, Predatory Fighter, Armoured Hide (2)",
+        "name_es": "Close Order, Cold Blooded, Obsidian Blades, Predatory Fighter, Armoured Hide (2)",
+        "name_fr": "Ordre Serré, Sang Froid, Lames d’Obsidienne, Combattant Prédateur, Peau Blindée (2)"
+      }
+    },
+    {
       "name_en": "Temple Guard {renegade}",
       "name_cn": "神殿守卫 {renegade}",
+      "name_de": "Temple Guard",
+      "name_es": "Temple Guard",
+      "name_fr": "Gardien du Temple",
+      "id": "temple-guard",
+      "points": 15,
+      "minimum": 10,
+      "maximum": 0,
+      "armyComposition": {
+        "lm-renegade": {
+          "category": "special"
+        }
+      },
+      "command": [
+        {
+          "name_en": "Revered Guardian (champion)",
+          "name_cn": "威严守护者(冠军)",
+          "name_de": "Revered Guardian (champion)",
+          "name_es": "Revered Guardian (champion)",
+          "name_fr": "Gardien Révéré (champion)",
+          "points": 7,
+          "magic": {
+            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "maxPoints": 50
+          }
+        },
+        {
+          "name_en": "Standard bearer",
+          "name_cn": "旗手",
+          "name_de": "Standard bearer",
+          "name_es": "Standard bearer",
+          "name_fr": "Porte-étendard",
+          "points": 7,
+          "magic": {
+            "types": ["banner"],
+            "maxPoints": 100
+          }
+        },
+        {
+          "name_en": "Musician",
+          "name_cn": "乐手",
+          "name_de": "Musician",
+          "name_es": "Musician",
+          "name_fr": "Musicien",
+          "points": 7
+        }
+      ],
+      "equipment": [
+        {
+          "name_en": "Hand weapons, Halberds, Shields",
+          "name_cn": "单手武器, 长戟, 盾牌",
+          "name_de": "Hand weapons, Halberds, Shields",
+          "name_es": "Hand weapons, Halberds, Shields",
+          "name_fr": "Armes de base, Hallebardes, Boucliers",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        }
+      ],
+      "armor": [
+        {
+          "name_en": "Light armour",
+          "name_cn": "轻甲",
+          "name_de": "Light armour",
+          "name_es": "Light armour",
+          "name_fr": "Armure légère",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        }
+      ],
+      "options": [
+        {
+          "name_en": "Drilled",
+          "name_cn": "受训",
+          "name_de": "Drilled",
+          "name_es": "Drilled",
+          "name_fr": "Bien Entraînés",
+          "points": 1,
+          "perModel": true
+        }
+      ],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Close Order, Cold Blooded {renegade}, Guardians {renegade}, Obsidian Blades, Predatory Fighter, Armoured Hide (2), Shieldwall, Stubborn",
+        "name_cn": "紧密阵型, 冷血 {renegade}, 守卫 {renegade}, 黑曜石之刃, 掠食性斗士, 坚硬皮肤(2), 盾墙, 坚毅",
+        "name_de": "Close Order, Cold Blooded, Guardians, Obsidian Blades, Predatory Fighter, Armoured Hide (2), Shieldwall, Stubborn",
+        "name_es": "Close Order, Cold Blooded, Guardians, Obsidian Blades, Predatory Fighter, Armoured Hide (2), Shieldwall, Stubborn",
+        "name_fr": "Ordre Serré, Sang Froid, Gardiens, Lames d’Obsidienne, Combattant Prédateur, Peau Blindée (2), Mur de Boucliers, Obstiné"
+      },
+      "notes": {
+        "name_en": "",
+        "name_cn": "",
+        "name_de": "",
+        "name_es": "",
+        "name_fr": ""
+      }
+    },
+    {
+      "name_en": "Temple Guard",
+      "name_cn": "神殿守卫",
       "name_de": "Temple Guard",
       "name_es": "Temple Guard",
       "name_fr": "Gardien du Temple",
@@ -938,8 +1340,8 @@
       "minimum": 10,
       "maximum": 0,
       "armyComposition": {
-        "lm-renegade": {
-          "category": "special"
+        "lizardmen": {
+          "category": "core"
         }
       },
       "command": [
@@ -1005,8 +1407,8 @@
       "items": [],
       "lores": [],
       "specialRules": {
-        "name_en": "Close Order, Cold Blooded {renegade}, Guardians {renegade}, Obsidian Blades, Shieldwall, Stubborn",
-        "name_cn": "紧密阵型, 冷血 {renegade}, 守卫 {renegade}, 黑曜石之刃, 盾墙, 坚毅",
+        "name_en": "Close Order, Cold Blooded, Guardians, Obsidian Blades, Shieldwall, Stubborn",
+        "name_cn": "紧密阵型, 冷血, 守卫, 黑曜石之刃, 盾墙, 坚毅",
         "name_de": "Close Order, Cold Blooded, Guardians, Obsidian Blades, Shieldwall, Stubborn",
         "name_es": "Close Order, Cold Blooded, Guardians, Obsidian Blades, Shieldwall, Stubborn",
         "name_fr": "Ordre Serré, Sang Froid, Gardiens, Lames d’Obsidienne, Mur de Boucliers, Obstiné"
@@ -1026,13 +1428,10 @@
       "name_es": "Temple Guard",
       "name_fr": "Gardien du Temple",
       "id": "temple-guard",
-      "points": 16,
+      "points": 15,
       "minimum": 10,
       "maximum": 0,
       "armyComposition": {
-        "lizardmen": {
-          "category": "core"
-        },
         "lm-renegade": {
           "category": "core",
           "notes": {
@@ -1094,26 +1493,36 @@
       ],
       "armor": [
         {
-          "name_en": "Heavy armour (Scaly skin)",
-          "name_cn": "重甲(Scaly skin)",
-          "name_de": "Heavy armour (Scaly skin)",
-          "name_es": "Heavy armour (Scaly skin)",
-          "name_fr": "Armure lourde (Peau écailleuse)",
+          "name_en": "Light armour",
+          "name_cn": "轻甲",
+          "name_de": "Light armour",
+          "name_es": "Light armour",
+          "name_fr": "Armure légère",
           "points": 0,
           "perModel": true,
           "active": true
         }
       ],
-      "options": [],
+      "options": [
+        {
+          "name_en": "Drilled",
+          "name_cn": "受训",
+          "name_de": "Drilled",
+          "name_es": "Drilled",
+          "name_fr": "Bien Entraînés",
+          "points": 1,
+          "perModel": true
+        }
+      ],
       "mounts": [],
       "items": [],
       "lores": [],
       "specialRules": {
-        "name_en": "Close Order, Cold Blooded {renegade}, Guardians {renegade}, Obsidian Blades, Shieldwall, Stubborn",
-        "name_cn": "紧密阵型, 冷血 {renegade}, 守卫 {renegade}, 黑曜石之刃, 盾墙, 坚毅",
-        "name_de": "Close Order, Cold Blooded, Guardians, Obsidian Blades, Shieldwall, Stubborn",
-        "name_es": "Close Order, Cold Blooded, Guardians, Obsidian Blades, Shieldwall, Stubborn",
-        "name_fr": "Ordre Serré, Sang Froid, Gardiens, Lames d’Obsidienne, Mur de Boucliers, Obstiné"
+        "name_en": "Close Order, Cold Blooded {renegade}, Guardians {renegade}, Obsidian Blades, Predatory Fighter, Armoured Hide (2), Shieldwall, Stubborn",
+        "name_cn": "紧密阵型, 冷血 {renegade}, 守卫 {renegade}, 黑曜石之刃, 掠食性斗士, 坚硬皮肤(2), 盾墙, 坚毅",
+        "name_de": "Close Order, Cold Blooded, Guardians, Obsidian Blades, Predatory Fighter, Armoured Hide (2), Shieldwall, Stubborn",
+        "name_es": "Close Order, Cold Blooded, Guardians, Obsidian Blades, Predatory Fighter, Armoured Hide (2), Shieldwall, Stubborn",
+        "name_fr": "Ordre Serré, Sang Froid, Gardiens, Lames d’Obsidienne, Combattant Prédateur, Peau Blindée (2), Mur de Boucliers, Obstiné"
       },
       "notes": {
         "name_en": "",
@@ -1133,6 +1542,11 @@
       "points": 5,
       "minimum": 10,
       "maximum": 0,
+      "armyComposition": {
+        "lizardmen": {
+          "category": "core"
+        }
+      },
       "command": [
         {
           "name_en": "Patrol Leader (champion)",
@@ -1229,6 +1643,235 @@
       }
     },
     {
+      "name_en": "Skink Skirmishers {renegade}",
+      "name_cn": "灵蜥散兵 {renegade}",
+      "name_de": "Skink Skirmishers",
+      "name_es": "Skink Skirmishers",
+      "name_fr": "Tirailleurs Skinks",
+      "id": "skink-skirmishers",
+      "points": 6,
+      "minimum": 10,
+      "maximum": 0,
+      "armyComposition": {
+        "lm-renegade": {
+          "category": "core"
+        }
+      },
+      "command": [
+        {
+          "name_en": "Patrol Leader (champion)",
+          "name_cn": "巡游首领(冠军)",
+          "name_de": "Patrol Leader (champion)",
+          "name_es": "Patrol Leader (champion)",
+          "name_fr": "Chef de Patrouille (champion)",
+          "points": 5
+        }
+      ],
+      "equipment": [
+        {
+          "name_en": "Hand weapons, Javelins, Shields",
+          "name_cn": "单手武器, 标枪, 盾牌",
+          "name_de": "Hand weapons, Javelins, Shields",
+          "name_es": "Hand weapons, Javelins, Shields",
+          "name_fr": "Armes de base, Javelines, Boucliers",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        },
+        {
+          "name_en": "Hand weapons, Blowpipes",
+          "name_cn": "单手武器, 吹管",
+          "name_de": "Hand weapons, Blowpipes",
+          "name_es": "Hand weapons, Blowpipes",
+          "name_fr": "Armes de base, Sarbacanes",
+          "points": 0,
+          "perModel": true
+        }
+      ],
+      "armor": [
+        {
+          "name_en": "Light armour (Calloused hides)",
+          "name_cn": "轻甲(细鳞)",
+          "name_de": "Light armour (Calloused hides)",
+          "name_es": "Light armour (Calloused hides)",
+          "name_fr": "Armure légère (Peaux calleuses)",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        }
+      ],
+      "options": [
+        {
+          "name_en": "Scouts",
+          "name_cn": "侦察",
+          "name_de": "Scouts",
+          "name_es": "Scouts",
+          "name_fr": "Éclaireurs",
+          "points": 10,
+          "exclusive": true,
+          "notes": {
+            "name_en": "0-1 per 1000 points",
+            "name_cn": "每1000分0-1",
+            "name_de": "0-1 pro 1000 Punkte",
+            "name_es": "0-1 por cada 1000 puntos",
+            "name_fr": "0-1 par tranche de 1000 points"
+          }
+        },
+        {
+          "name_en": "Vanguard",
+          "name_cn": "先锋",
+          "name_de": "Vanguard",
+          "name_es": "Vanguard",
+          "name_fr": "Avant-garde",
+          "points": 5,
+          "exclusive": true,
+          "notes": {
+            "name_en": "0-1 per 1000 points",
+            "name_cn": "每1000分0-1",
+            "name_de": "0-1 pro 1000 Punkte",
+            "name_es": "0-1 por cada 1000 puntos",
+            "name_fr": "0-1 par tranche de 1000 points"
+          }
+        }
+      ],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Aquatic, Cold Blooded {renegade}, Move Through Cover, Poisoned Attacks (Javelins only), Skirmishers",
+        "name_cn": "水生, 冷血 {renegade}, 穿行掩体, 淬毒攻击(Javelins only), 散兵",
+        "name_de": "Aquatic, Cold Blooded, Move Through Cover, Poisoned Attacks (Javelins only), Skirmishers",
+        "name_es": "Aquatic, Cold Blooded, Move Through Cover, Poisoned Attacks (Javelins only), Skirmishers",
+        "name_fr": "Aquatique, Sang Froid, Mouvement à Couvert, Attaques Empoisonnées (Javelines uniquement), Tirailleurs"
+      },
+      "notes": {
+        "name_en": "0-1 unit per 1000 points may have one of the following: The Scouts special rule, The Vanguard special rule",
+        "name_cn": "每1000分0-1个单位可以选择以下升级之一: 获得侦察特殊规则, 获得先锋特殊规则",
+        "name_de": "0-1 unit per 1000 points may have one of the following: The Scouts special rule, The Vanguard special rule",
+        "name_es": "0-1 unit per 1000 points may have one of the following: The Scouts special rule, The Vanguard special rule",
+        "name_fr": "0-1 unité par tranche de 1000 points peut avoir l'une des options suivantes: La règle spéciale Éclaireurs, La règle spéciale Avant-garde"
+      }
+    },
+    {
+      "name_en": "Skink Cohorts {renegade}",
+      "name_cn": "灵蜥战群 {renegade}",
+      "name_de": "Skink Cohorts",
+      "name_es": "Skink Cohorts",
+      "name_fr": "Cohortes de Skinks",
+      "id": "skink-cohorts",
+      "points": 5,
+      "minimum": 10,
+      "maximum": 0,
+      "armyComposition": {
+        "lm-renegade": {
+          "category": "core"
+        }
+      },
+      "command": [
+        {
+          "name_en": "Skink Brave (champion)",
+          "name_cn": "灵蜥勇士(冠军)",
+          "name_de": "Skink Brave (champion)",
+          "name_es": "Skink Brave (champion)",
+          "name_fr": "Brave Skink (champion)",
+          "points": 5
+        },
+        {
+          "name_en": "Standard bearer",
+          "name_cn": "旗手",
+          "name_de": "Standard bearer",
+          "name_es": "Standard bearer",
+          "name_fr": "Porte-étendard",
+          "points": 5
+        },
+        {
+          "name_en": "Musician",
+          "name_cn": "乐手",
+          "name_de": "Musician",
+          "name_es": "Musician",
+          "name_fr": "Musicien",
+          "points": 5
+        }
+      ],
+      "equipment": [
+        {
+          "name_en": "Hand weapons, Blowpipes",
+          "name_cn": "单手武器, 吹管",
+          "name_de": "Hand weapons, Blowpipes",
+          "name_es": "Hand weapons, Blowpipes",
+          "name_fr": "Armes de base, Sarbacanes",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        },
+        {
+          "name_en": "Hand weapons, Javelins, Shields",
+          "name_cn": "单手武器, 标枪, 盾牌",
+          "name_de": "Hand weapons, Javelins, Shields",
+          "name_es": "Hand weapons, Javelins, Shields",
+          "name_fr": "Armes de base, Javelines, Boucliers",
+          "points": 0,
+          "perModel": true
+        },
+        {
+          "name_en": "Hand weapons, Shortbows",
+          "name_cn": "单手武器, 短弓",
+          "name_de": "Hand weapons, Shortbows",
+          "name_es": "Hand weapons, Shortbows",
+          "name_fr": "Armes de base, Arcs courts",
+          "points": 0,
+          "perModel": true
+        }
+      ],
+      "armor": [
+        {
+          "name_en": "Light armour (Calloused hides)",
+          "name_cn": "轻甲(细鳞)",
+          "name_de": "Light armour (Calloused hides)",
+          "name_es": "Light armour (Calloused hides)",
+          "name_fr": "Armure légère (Peaux calleuses)",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        }
+      ],
+      "options": [
+        {
+          "name_en": "Kroxigor",
+          "name_cn": "巨蜥",
+          "name_de": "Kroxigor",
+          "name_es": "Kroxigor",
+          "name_fr": "Kroxigor",
+          "points": 49,
+          "stackable": true,
+          "notes": {
+            "name_en": "Include 0-1 Kroxigor per 8 Skinks, to a maximum of 3",
+            "name_cn": "每8个灵蜥可以编入0-1巨蜥, 最多3个",
+            "name_de": "Include 0-1 Kroxigor per 8 Skinks, to a maximum of 3",
+            "name_es": "Include 0-1 Kroxigor per 8 Skinks, to a maximum of 3",
+            "name_fr": "Inclure 0-1 Kroxigor par tranche de 8 Skinks, jusqu'à un maximum de 3"
+          }
+        }
+      ],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Aquatic, Close Order, Cold Blooded {renegade}, Move Through Cover, Poisoned Attacks (Javelins and Shortbows only), Spawn-kin",
+        "name_cn": "水生, 紧密阵型, 冷血 {renegade}, 穿行掩体, 淬毒攻击(Javelins and Shortbows only), Spawn-kin",
+        "name_de": "Aquatic, Close Order, Cold Blooded, Move Through Cover, Poisoned Attacks (Javelins and Shortbows only), Spawn-kin",
+        "name_es": "Aquatic, Close Order, Cold Blooded, Move Through Cover, Poisoned Attacks (Javelins and Shortbows only), Spawn-kin",
+        "name_fr": "Aquatique, Ordre Serré, Sang Froid, Mouvement à Couvert, Attaques Empoisonnées (Javelines et Arcs courts uniquement), Spawn-kin"
+      },
+      "notes": {
+        "name_en": "",
+        "name_cn": "",
+        "name_de": "",
+        "name_es": "",
+        "name_fr": ""
+      }
+    },
+    {
       "name_en": "Jungle Swarms",
       "name_cn": "丛林蛇群",
       "name_de": "Jungle Swarms",
@@ -1282,6 +1925,21 @@
       "points": 11,
       "minimum": 5,
       "maximum": 0,
+      "armyComposition": {
+        "lizardmen": {
+          "category": "special"
+        },
+        "lm-renegade": {
+          "category": "special",
+          "specialRules": {
+            "name_en": "Aquatic, Ambushers, Chameleon, Cold Blooded {renegade}, Evasive, Fire & Flee, Loner, Move Through Cover, Scouts, Skirmishers",
+            "name_cn": "水生, 伏击, 变色龙, 冷血 {renegade}, 闪避, 边射边逃, 独行, 穿行掩体, 侦察, 散兵",
+            "name_de": "Aquatic, Ambushers, Chameleon, Cold Blooded, Evasive, Fire & Flee, Loner, Move Through Cover, Scouts, Skirmishers",
+            "name_es": "Aquatic, Ambushers, Chameleon, Cold Blooded, Evasive, Fire & Flee, Loner, Move Through Cover, Scouts, Skirmishers",
+            "name_fr": "Aquatique, Embuscade, Caméléon, Sang Froid, Esquiveur, Tir et Fuite, Solitaire, Mouvement à Couvert, Éclaireurs, Tirailleurs"
+          }
+        }
+      },
       "command": [
         {
           "name_en": "Patrol Leader (champion)",
@@ -1345,6 +2003,21 @@
       "points": 49,
       "minimum": 3,
       "maximum": 0,
+      "armyComposition": {
+        "lizardmen": {
+          "category": "special"
+        },
+        "lm-renegade": {
+          "category": "special",
+          "specialRules": {
+            "name_en": "Aquatic, Close Order, Cold Blooded {renegade}, Fear, Predatory Fighter, Skirmish Screen",
+            "name_cn": "水生, 紧密阵型, 冷血 {renegade}, 恐惧, 掠食性斗士, 散兵屏卫",
+            "name_de": "Aquatic, Close Order, Cold Blooded, Fear, Predatory Fighter, Skirmish Screen",
+            "name_es": "Aquatic, Close Order, Cold Blooded, Fear, Predatory Fighter, Skirmish Screen",
+            "name_fr": "Aquatique, Ordre Serré, Sang Froid, Peur, Combattant Prédateur, Écran de Tirailleurs"
+          }
+        }
+      },
       "command": [
         {
           "name_en": "Ancient (champion)",
@@ -1376,7 +2049,19 @@
           "name_fr": "Armure lourde (Peau écailleuse)",
           "points": 0,
           "perModel": true,
-          "active": true
+          "active": true,
+          "armyComposition": "lizardmen"
+        },
+        {
+          "name_en": "Full plate armour (Plated carapace)",
+          "name_cn": "全身甲(甲壳)",
+          "name_de": "Full plate armour (Plated carapace)",
+          "name_es": "Full plate armour (Plated carapace)",
+          "name_fr": "Armure de plates (Carapace blindée)",
+          "points": 0,
+          "perModel": true,
+          "active": true,
+          "armyComposition": "lm-renegade"
         }
       ],
       "options": [],
@@ -1422,7 +2107,14 @@
           }
         },
         "lm-renegade": {
-          "category": "special"
+          "category": "special",
+          "specialRules": {
+            "name_en": "Armoured Hide (2), Cold Blooded {renegade}, Drop Rocks, Fear, Fire & Flee, Fly (10), Poisoned Attacks (Javelins only), Skink Riders, Skirmishers, Swiftstride",
+            "name_cn": "坚硬皮肤(2), 冷血 {renegade}, 落石, 恐惧, 边射边逃, 飞行(10), 淬毒攻击(Javelins only), 灵蜥骑手, 散兵, 快速行进",
+            "name_de": "Armoured Hide (2), Cold Blooded, Drop Rocks, Fear, Fire & Flee, Fly (10), Poisoned Attacks (Javelins only), Skink Riders, Skirmishers, Swiftstride",
+            "name_es": "Armoured Hide (2), Cold Blooded, Drop Rocks, Fear, Fire & Flee, Fly (10), Poisoned Attacks (Javelins only), Skink Riders, Skirmishers, Swiftstride",
+            "name_fr": "Peau Blindée (2), Sang Froid, Rochers, Peur, Tir et Fuite, Vol (10), Attaques Empoisonnées (Javelines uniquement), Cavaliers Skinks, Tirailleurs, Rapide"
+          }
         }
       },
       "command": [
@@ -1432,7 +2124,21 @@
           "name_de": "Sky Leader (champion)",
           "name_es": "Sky Leader (champion)",
           "name_fr": "Chef Céleste (champion)",
-          "points": 6
+          "points": 6,
+          "armyComposition": "lizardmen"
+        },
+        {
+          "name_en": "Sky Leader (champion)",
+          "name_cn": "天空领袖(冠军)",
+          "name_de": "Sky Leader (champion)",
+          "name_es": "Sky Leader (champion)",
+          "name_fr": "Chef Céleste (champion)",
+          "points": 6,
+          "magic": {
+            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "maxPoints": 25
+          },
+          "armyComposition": "lm-renegade"
         }
       ],
       "equipment": [
@@ -1453,7 +2159,18 @@
           "name_es": "Hand weapons, Fireleech bolas",
           "name_fr": "Armes de base, Bolas à pyrosangsues",
           "points": 1,
-          "perModel": true
+          "perModel": true,
+          "armyComposition": "lizardmen"
+        },
+        {
+          "name_en": "Hand weapons, Fireleech bolas {renegade}",
+          "name_cn": "单手武器, 火蛭甩球 {renegade}",
+          "name_de": "Hand weapons, Fireleech bolas",
+          "name_es": "Hand weapons, Fireleech bolas",
+          "name_fr": "Armes de base, Bolas à pyrosangsues",
+          "points": 2,
+          "perModel": true,
+          "armyComposition": "lm-renegade"
         }
       ],
       "armor": [
@@ -1465,10 +2182,22 @@
           "name_fr": "Armure légère (Peaux calleuses)",
           "points": 0,
           "perModel": true,
-          "active": true
+          "active": true,
+          "armyComposition": "lizardmen"
         }
       ],
-      "options": [],
+      "options": [
+        {
+          "name_en": "Shields",
+          "name_cn": "盾牌",
+          "name_de": "Shields",
+          "name_es": "Shields",
+          "name_fr": "Boucliers",
+          "points": 1,
+          "perModel": true,
+          "armyComposition": "lm-renegade"
+        }
+      ],
       "mounts": [],
       "items": [],
       "lores": [],
@@ -1504,7 +2233,14 @@
           }
         },
         "lm-renegade": {
-          "category": "special"
+          "category": "special",
+          "specialRules": {
+            "name_en": "Armoured Hide (2), Cleaving Blow (Ripperdactyl only), Cold Blooded {renegade}, Counter Charge, Fear, Fly (9), Predatory Fighter (Ripperdactyl only), Impetuous, Skink Riders, Skirmishers, Swiftstride, Toad Rage",
+            "name_cn": "坚硬皮肤(2), 劈裂打击(Ripperdactyl only), 冷血 {renegade}, 反冲锋, 恐惧, 飞行(9), 掠食性斗士(Ripperdactyl only), 鲁莽, 灵蜥骑手, 散兵, 快速行进, 怒戳肿蟾",
+            "name_de": "Armoured Hide (2), Cleaving Blow (Ripperdactyl only), Cold Blooded, Counter Charge, Fear, Fly (9), Predatory Fighter (Ripperdactyl only), Impetuous, Skink Riders, Skirmishers, Swiftstride, Toad Rage",
+            "name_es": "Armoured Hide (2), Cleaving Blow (Ripperdactyl only), Cold Blooded, Counter Charge, Fear, Fly (9), Predatory Fighter (Ripperdactyl only), Impetuous, Skink Riders, Skirmishers, Swiftstride, Toad Rage",
+            "name_fr": "Peau Blindée (2), Coup de Fendoir (Entérodactyle uniquement), Sang Froid, Contre-charge, Peur, Vol (9), Combattant Prédateur (Entérodactyle uniquement), Impétueux, Cavaliers Skinks, Tirailleurs, Rapide, Crapauds"
+          }
         }
       },
       "command": [
@@ -1514,7 +2250,21 @@
           "name_de": "Ripperdactyl Champion",
           "name_es": "Ripperdactyl Champion",
           "name_fr": "Champion Entérodactyle",
-          "points": 6
+          "points": 6,
+          "armyComposition": "lizardmen"
+        },
+        {
+          "name_en": "Ripperdactyl Champion",
+          "name_cn": "巨喙龙冠军",
+          "name_de": "Ripperdactyl Champion",
+          "name_es": "Ripperdactyl Champion",
+          "name_fr": "Champion Entérodactyle",
+          "points": 6,
+          "magic": {
+            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "maxPoints": 25
+          },
+          "armyComposition": "lm-renegade"
         }
       ],
       "equipment": [
@@ -1538,7 +2288,8 @@
           "name_fr": "Armure légère (Peaux calleuses)",
           "points": 0,
           "perModel": true,
-          "active": true
+          "active": true,
+          "armyComposition": "lizardmen"
         }
       ],
       "options": [],
@@ -1563,6 +2314,21 @@
       "points": 34,
       "minimum": 5,
       "maximum": 0,
+      "armyComposition": {
+        "lizardmen": {
+          "category": "special"
+        },
+        "lm-renegade": {
+          "category": "special",
+          "specialRules": {
+            "name_en": "Armour Bane (1 - Cold One only), Armoured Hide (3), Close Order, Cold Blooded {renegade}, Counter Charge, Fear, Obsidian Blades, Predatory Fighter (Rider only), Stupidity, Swiftstride",
+            "name_cn": "碎甲攻击(1 - Cold One only), 坚硬皮肤(3), 紧密阵型, 冷血 {renegade}, 反冲锋, 恐惧, 黑曜石之刃, 掠食性斗士(Rider only), 愚笨, 快速行进",
+            "name_de": "Armour Bane (1 - Cold One only), Armoured Hide (3), Close Order, Cold Blooded, Counter Charge, Fear, Obsidian Blades, Predatory Fighter (Rider only), Stupidity, Swiftstride",
+            "name_es": "Armour Bane (1 - Cold One only), Armoured Hide (3), Close Order, Cold Blooded, Counter Charge, Fear, Obsidian Blades, Predatory Fighter (Rider only), Stupidity, Swiftstride",
+            "name_fr": "Arme Perforante (1 - Sang-froid uniquement), Peau Blindée (3), Ordre Serré, Sang Froid, Contre-charge, Peur, Lames d’Obsidienne, Combattant Prédateur (Cavalier uniquement), Stupidité, Rapide"
+          }
+        }
+      },
       "command": [
         {
           "name_en": "Pack Leader (champion)",
@@ -1608,7 +2374,8 @@
           "name_fr": "Armes de base, Boucliers",
           "points": 0,
           "perModel": true,
-          "active": true
+          "active": true,
+          "armyComposition": "lizardmen"
         },
         {
           "name_en": "Cavalry spears, Shields",
@@ -1617,7 +2384,19 @@
           "name_es": "Cavalry spears, Shields",
           "name_fr": "Lances de cavalerie, Boucliers",
           "points": 1,
-          "perModel": true
+          "perModel": true,
+          "armyComposition": "lizardmen"
+        },
+        {
+          "name_en": "Hand weapons, Cavalry spears, Shields",
+          "name_cn": "单手武器, 骑兵长矛, 盾牌",
+          "name_de": "Hand weapons, Cavalry spears, Shields",
+          "name_es": "Hand weapons, Cavalry spears, Shields",
+          "name_fr": "Armes de base, Lances de cavalerie, Boucliers",
+          "points": 0,
+          "perModel": true,
+          "active": true,
+          "armyComposition": "lm-renegade"
         }
       ],
       "armor": [
@@ -1629,7 +2408,18 @@
           "name_fr": "Armure lourde (Peau écailleuse)",
           "points": 0,
           "perModel": true,
-          "active": true
+          "active": true,
+          "armyComposition": "lizardmen"
+        },
+        {
+          "name_en": "Light armour",
+          "name_cn": "轻甲",
+          "name_de": "Light armour",
+          "name_es": "Light armour",
+          "name_fr": "Armure légère",
+          "points": 4,
+          "perModel": true,
+          "armyComposition": "lm-renegade"
         }
       ],
       "options": [
@@ -1694,9 +2484,6 @@
             "name_it": "0-2 Bastiladons per 1000 points",
             "name_pl": "0-2 Bastiladons per 1000 points"
           }
-        },
-        "lm-renegade": {
-          "category": "special"
         }
       },
       "command": [],
@@ -1742,6 +2529,61 @@
       }
     },
     {
+      "name_en": "Bastiladon {renegade}",
+      "name_cn": "甲龙 {renegade}",
+      "name_de": "Bastiladon",
+      "name_es": "Bastiladon",
+      "name_fr": "Bastiladon",
+      "id": "bastiladon",
+      "points": 140,
+      "armyComposition": {
+        "lm-renegade": {
+          "category": "special"
+        }
+      },
+      "command": [],
+      "equipment": [
+        {
+          "name_en": "Hand weapons, Javelins, Thunderous bludgeon, Ark of Sotek",
+          "name_cn": "单手武器, 标枪, 雷霆锤击, 索泰克神柜",
+          "name_de": "Hand weapons, Javelins, Thunderous bludgeon, Ark of Sotek",
+          "name_es": "Hand weapons, Javelins, Thunderous bludgeon, Ark of Sotek",
+          "name_fr": "Armes de base, Javelines, Balayage furieux, Arche de Sotek",
+          "points": 0,
+          "active": true
+        },
+        {
+          "name_en": "Hand weapons, Javelins, Thunderous bludgeon, Solar Engine",
+          "name_cn": "单手武器, 标枪, 雷霆锤击, 太阳引擎",
+          "name_de": "Hand weapons, Javelins, Thunderous bludgeon, Solar Engine",
+          "name_es": "Hand weapons, Javelins, Thunderous bludgeon, Solar Engine",
+          "name_fr": "Armes de base, Javelines, Balayage furieux, Machine Solaire",
+          "points": 35
+        }
+      ],
+      "armor": [],
+      "options": [
+        {
+          "name_en": "Fourth Skink crew member",
+          "name_cn": "增加 1 个灵蜥乘员",
+          "name_de": "Fourth Skink crew member",
+          "name_es": "Fourth Skink crew member",
+          "name_fr": "Quatrième membre d’équipage Skink",
+          "points": 5
+        }
+      ],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Close Order, Cold Blooded {renegade}, Immune to Psychology, Impact Hits (D3), Impervious Defence, Large Target, Poisoned Attacks (Javelins only), Skink Riders, Stomp Attacks (D3+1), Stubborn, Terror",
+        "name_cn": "紧密阵型, 冷血 {renegade}, 心理免疫, 撞击(D3), 无缝防御, 大型目标, 淬毒攻击(Javelins only), 灵蜥骑手, 践踏攻击(D3+1), 坚毅, 惊骇",
+        "name_de": "Close Order, Cold Blooded, Immune to Psychology, Impact Hits (D3), Impervious Defence, Large Target, Poisoned Attacks (Javelins only), Skink Riders, Stomp Attacks (D3+1), Stubborn, Terror",
+        "name_es": "Close Order, Cold Blooded, Immune to Psychology, Impact Hits (D3), Impervious Defence, Large Target, Poisoned Attacks (Javelins only), Skink Riders, Stomp Attacks (D3+1), Stubborn, Terror",
+        "name_fr": "Ordre Serré, Sang Froid, Immunisé à la Psychologie, Touches d’Impact (D3), Défense Impénétrable, Grande Cible, Attaques Empoisonnées (Javelines uniquement), Cavaliers Skinks, Attaques de Piétinement (D3+1), Obstiné, Terreur"
+      }
+    },
+    {
       "name_en": "Stegadon",
       "name_cn": "三角龙",
       "name_de": "Stegadon",
@@ -1761,7 +2603,50 @@
             "name_it": "0-1 Stegadon or Troglodon per 1,000 points",
             "name_pl": "0-1 Stegadon or Troglodon per 1,000 points"
           }
+        }
+      },
+      "command": [],
+      "equipment": [
+        {
+          "name_en": "Hand weapons, Javelins, Great horns, Giant bow",
+          "name_cn": "单手武器, 标枪, 巨角, 巨弓",
+          "name_de": "Hand weapons, Javelins, Great horns, Giant bow",
+          "name_es": "Hand weapons, Javelins, Great horns, Giant bow",
+          "name_fr": "Armes de base, Javelines, Grandes cornes, Arc géant",
+          "points": 0,
+          "active": true
         },
+        {
+          "name_en": "Hand weapons, Javelins, Great horns, Giant blowpipes",
+          "name_cn": "单手武器, 标枪, 巨角, 巨型吹管",
+          "name_de": "Hand weapons, Javelins, Great horns, Giant blowpipes",
+          "name_es": "Hand weapons, Javelins, Great horns, Giant blowpipes",
+          "name_fr": "Armes de base, Javelines, Grandes cornes, Sarbacanes géantes",
+          "points": 0
+        }
+      ],
+      "armor": [],
+      "options": [],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_cn": "紧密阵型, 冷血, 驮轿, 心理免疫, 撞击(D3+1), 大型目标, 淬毒攻击(Javelins only), 践踏攻击(D3+2), 坚毅, 惊骇",
+        "name_de": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_es": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_fr": "Ordre Serré, Sang Froid, Howdah, Immunisé à la Psychologie, Touches d’Impact (D3+1), Grande Cible, Attaques Empoisonnées (Javelines uniquement), Attaques de Piétinement (D3+2), Obstiné, Terreur"
+      }
+    },
+    {
+      "name_en": "Stegadon {renegade}",
+      "name_cn": "三角龙 {renegade}",
+      "name_de": "Stegadon",
+      "name_es": "Stegadon",
+      "name_fr": "Stégadon",
+      "id": "stegadon",
+      "points": 195,
+      "armyComposition": {
         "lm-renegade": {
           "category": "special"
         }
@@ -1792,11 +2677,11 @@
       "items": [],
       "lores": [],
       "specialRules": {
-        "name_en": "Close Order, Cold Blooded {renegade}, Howdah {renegade}, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
-        "name_cn": "紧密阵型, 冷血 {renegade}, 驮轿 {renegade}, 心理免疫, 撞击(D3+1), 大型目标, 淬毒攻击(Javelins only), 践踏攻击(D3+2), 坚毅, 惊骇",
-        "name_de": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
-        "name_es": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
-        "name_fr": "Ordre Serré, Sang Froid, Howdah, Immunisé à la Psychologie, Touches d’Impact (D3+1), Grande Cible, Attaques Empoisonnées (Javelines uniquement), Attaques de Piétinement (D3+2), Obstiné, Terreur"
+        "name_en": "Close Order, Cold Blooded {renegade}, Great Horns, Howdah {renegade}, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Skink Riders, Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_cn": "紧密阵型, 冷血 {renegade}, 巨角, 驮轿 {renegade}, 心理免疫, 撞击(D3+1), 大型目标, 淬毒攻击(Javelins only), 灵蜥骑手, 践踏攻击(D3+2), 坚毅, 惊骇",
+        "name_de": "Close Order, Cold Blooded, Great Horns, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Skink Riders, Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_es": "Close Order, Cold Blooded, Great Horns, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Skink Riders, Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_fr": "Ordre Serré, Sang Froid, Grandes Cornes, Howdah, Immunisé à la Psychologie, Touches d’Impact (D3+1), Grande Cible, Attaques Empoisonnées (Javelines uniquement), Cavaliers Skinks, Attaques de Piétinement (D3+2), Obstiné, Terreur"
       }
     }
   ],
@@ -1823,34 +2708,19 @@
             "name_it": "0-1 Salamander Pack or Razordon Pack per 1000 points",
             "name_pl": "0-1 Salamander Pack or Razordon Pack per 1000 points"
           }
-        },
-        "lm-renegade": {
-          "category": "rare"
         }
       },
       "command": [],
       "equipment": [
         {
-          "name_en": "Wicked claws, Fiery breath {lizardmen}",
+          "name_en": "Wicked claws, Fiery breath",
           "name_cn": "恶毒之爪, 火焰吐息",
           "name_de": "Wicked claws, Fiery breath",
           "name_es": "Wicked claws, Fiery breath",
           "name_fr": "Griffes mortelles, Souffle ardent",
           "points": 0,
           "perModel": true,
-          "active": true,
-          "armyComposition": "lizardmen"
-        },
-        {
-          "name_en": "Wicked claws, Fiery breath {renegade}",
-          "name_cn": "恶毒之爪, 火焰吐息 {renegade}",
-          "name_de": "Wicked claws, Fiery breath",
-          "name_es": "Wicked claws, Fiery breath",
-          "name_fr": "Griffes mortelles, Souffle ardent",
-          "points": 0,
-          "perModel": true,
-          "active": true,
-          "armyComposition": "lm-renegade"
+          "active": true
         }
       ],
       "armor": [
@@ -1881,11 +2751,70 @@
       "items": [],
       "lores": [],
       "specialRules": {
-        "name_en": "Aquatic, Beast Handlers, Cold Blooded {renegade}, Fear, Skirmishers",
-        "name_cn": "水生, 野兽驭手, 冷血 {renegade}, 恐惧, 散兵",
+        "name_en": "Aquatic, Beast Handlers, Cold Blooded, Fear, Skirmishers",
+        "name_cn": "水生, 野兽驭手, 冷血, 恐惧, 散兵",
         "name_de": "Aquatic, Beast Handlers, Cold Blooded, Fear, Skirmishers",
         "name_es": "Aquatic, Beast Handlers, Cold Blooded, Fear, Skirmishers",
         "name_fr": "Aquatique, Maître des Bêtes, Sang Froid, Peur, Tirailleurs"
+      }
+    },
+    {
+      "name_en": "Salamander Pack {renegade}",
+      "name_cn": "火蜥蜴猎群 {renegade}",
+      "name_de": "Salamander Pack",
+      "name_es": "Salamander Pack",
+      "name_fr": "Meute de Salamandres",
+      "id": "salamander-packs",
+      "points": 65,
+      "minimum": 1,
+      "maximum": 0,
+      "armyComposition": {
+        "lm-renegade": {
+          "category": "rare"
+        }
+      },
+      "command": [],
+      "equipment": [
+        {
+          "name_en": "Wicked claws, Fiery breath (Salamander), Hand weapons (Skink Handlers)",
+          "name_cn": "恶毒之爪, 火焰吐息 (Salamander), 单手武器 (Skink Handlers)",
+          "name_de": "Wicked claws, Fiery breath (Salamander), Hand weapons (Skink Handlers)",
+          "name_es": "Wicked claws, Fiery breath (Salamander), Hand weapons (Skink Handlers)",
+          "name_fr": "Griffes mortelles, Souffle ardent (Salamandre), Armes de base (Coureurs Skinks)",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        }
+      ],
+      "armor": [
+        {
+          "name_en": "Full plate armour (Plated carapace)",
+          "name_cn": "全身板甲(甲壳)",
+          "name_de": "Full plate armour (Plated carapace)",
+          "name_es": "Full plate armour (Plated carapace)",
+          "name_fr": "Armure de plates complète (Carapace blindée)",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        }
+      ],
+      "options": [],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Aquatic, Beast Handlers, Cold Blooded {renegade}, Fear, Reserve Move, Skirmishers",
+        "name_cn": "水生, 野兽驭手, 冷血 {renegade}, 恐惧, 后备移动, 散兵",
+        "name_de": "Aquatic, Beast Handlers, Cold Blooded, Fear, Reserve Move, Skirmishers",
+        "name_es": "Aquatic, Beast Handlers, Cold Blooded, Fear, Reserve Move, Skirmishers",
+        "name_fr": "Aquatique, Maître des Bêtes, Sang Froid, Peur, Mouvement de Réserve, Tirailleurs"
+      },
+      "notes": {
+        "name_en": "Each Salamander is accompanied by 3 Skink Handlers",
+        "name_cn": "每只火蜥蜴随附3名灵蜥驯兽员",
+        "name_de": "Each Salamander is accompanied by 3 Skink Handlers",
+        "name_es": "Each Salamander is accompanied by 3 Skink Handlers",
+        "name_fr": "Chaque Salamandre est accompagnée de 3 Coureurs Skinks"
       }
     },
     {
@@ -1910,9 +2839,6 @@
             "name_it": "0-1 Salamander Pack or Razordon Pack per 1000 points",
             "name_pl": "0-1 Salamander Pack or Razordon Pack per 1000 points"
           }
-        },
-        "lm-renegade": {
-          "category": "rare"
         }
       },
       "command": [],
@@ -1956,11 +2882,70 @@
       "items": [],
       "lores": [],
       "specialRules": {
+        "name_en": "Aquatic, Beast Handlers, Cold Blooded, Fear, Skirmishers",
+        "name_cn": "水生, 野兽驭手, 冷血, 恐惧, 散兵",
+        "name_de": "Aquatic, Beast Handlers, Cold Blooded, Fear, Skirmishers",
+        "name_es": "Aquatic, Beast Handlers, Cold Blooded, Fear, Skirmishers",
+        "name_fr": "Aquatique, Maître des Bêtes, Sang Froid, Peur, Tirailleurs"
+      }
+    },
+    {
+      "name_en": "Razordon Pack {renegade}",
+      "name_cn": "刺背蜥猎群 {renegade}",
+      "name_de": "Razordon Pack",
+      "name_es": "Razordon Pack",
+      "name_fr": "Meute de Razordons",
+      "id": "razordon-packs",
+      "points": 75,
+      "minimum": 1,
+      "maximum": 0,
+      "armyComposition": {
+        "lm-renegade": {
+          "category": "rare"
+        }
+      },
+      "command": [],
+      "equipment": [
+        {
+          "name_en": "Wicked claws, Razor barbs (Razordon), Hand weapons (Skink Handlers)",
+          "name_cn": "恶毒之爪, 棘刺 (Razordon), 单手武器 (Skink Handlers)",
+          "name_de": "Wicked claws, Razor barbs (Razordon), Hand weapons (Skink Handlers)",
+          "name_es": "Wicked claws, Razor barbs (Razordon), Hand weapons (Skink Handlers)",
+          "name_fr": "Griffes mortelles, Épines acérées (Razordon), Armes de base (Coureurs Skinks)",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        }
+      ],
+      "armor": [
+        {
+          "name_en": "Full plate armour (Plated carapace)",
+          "name_cn": "全身板甲(甲壳)",
+          "name_de": "Full plate armour (Plated carapace)",
+          "name_es": "Full plate armour (Plated carapace)",
+          "name_fr": "Armure de plates complète (Carapace blindée)",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        }
+      ],
+      "options": [],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
         "name_en": "Aquatic, Beast Handlers, Cold Blooded {renegade}, Fear, Skirmishers",
         "name_cn": "水生, 野兽驭手, 冷血 {renegade}, 恐惧, 散兵",
         "name_de": "Aquatic, Beast Handlers, Cold Blooded, Fear, Skirmishers",
         "name_es": "Aquatic, Beast Handlers, Cold Blooded, Fear, Skirmishers",
         "name_fr": "Aquatique, Maître des Bêtes, Sang Froid, Peur, Tirailleurs"
+      },
+      "notes": {
+        "name_en": "Each Razordon is accompanied by 3 Skink Handlers",
+        "name_cn": "每只刺背蜥随附3名灵蜥驯兽员",
+        "name_de": "Each Razordon is accompanied by 3 Skink Handlers",
+        "name_es": "Each Razordon is accompanied by 3 Skink Handlers",
+        "name_fr": "Chaque Razordon est accompagné de 3 Coureurs Skinks"
       }
     },
     {
@@ -1982,9 +2967,6 @@
             "name_it": "0-1 Stegadon or Troglodon per 1000 points",
             "name_pl": "0-1 Stegadon or Troglodon per 1000 points"
           }
-        },
-        "lm-renegade": {
-          "category": "rare"
         }
       },
       "points": 200,
@@ -2026,11 +3008,109 @@
       "items": [],
       "lores": [],
       "specialRules": {
-        "name_en": "Arcane Vassal, Aquatic, Close Order, Cold Blooded {renegade}, Immune to Psychology, Large Target, Lore of Lustria, Primeval Roar, Stomp Attacks (2), Stubborn, Terror",
-        "name_cn": "奥术构造, 水生, 紧密阵型, 冷血 {renegade}, 心理免疫, 大型目标, 露丝契亚法系, Primeval Roar, 践踏攻击(2), 坚毅, 惊骇",
+        "name_en": "Arcane Vassal, Aquatic, Close Order, Cold Blooded, Immune to Psychology, Large Target, Lore of Lustria, Primeval Roar, Stomp Attacks (2), Stubborn, Terror",
+        "name_cn": "奥术构造, 水生, 紧密阵型, 冷血, 心理免疫, 大型目标, 露丝契亚法系, Primeval Roar, 践踏攻击(2), 坚毅, 惊骇",
         "name_de": "Arcane Vassal, Aquatic, Close Order, Cold Blooded, Immune to Psychology, Large Target, Lore of Lustria, Primeval Roar, Stomp Attacks (2), Stubborn, Terror",
         "name_es": "Arcane Vassal, Aquatic, Close Order, Cold Blooded, Immune to Psychology, Large Target, Lore of Lustria, Primeval Roar, Stomp Attacks (2), Stubborn, Terror",
         "name_fr": "Vassal Magique, Aquatique, Ordre Serré, Sang Froid, Immunisé à la Psychologie, Grande Cible, Domaine de Lustrie, Rugissement Primal, Attaques de Piétinement (2), Obstiné, Terreur"
+      }
+    },
+    {
+      "name_en": "Troglodon {renegade}",
+      "name_cn": "穴居龙 {renegade}",
+      "name_de": "Troglodon",
+      "name_es": "Troglodon",
+      "name_fr": "Troglodon",
+      "id": "troglodon",
+      "points": 140,
+      "armyComposition": {
+        "lm-renegade": {
+          "category": "rare"
+        }
+      },
+      "command": [
+        {
+          "name_en": "Skink Oracle with Hand weapon",
+          "name_cn": "神谕骑士装备单手武器",
+          "name_de": "Skink Oracle with Hand weapon",
+          "name_es": "Skink Oracle with Hand weapon",
+          "name_fr": "Oracle Skink avec Arme de base",
+          "active": true,
+          "points": 0
+        }
+      ],
+      "equipment": [
+        {
+          "name_en": "Venomous talons, Venom spray",
+          "name_cn": "毒爪, 毒液喷吐",
+          "name_de": "Venomous talons, Venom spray",
+          "name_es": "Venomous talons, Venom spray",
+          "name_fr": "Serres venimeuses, Crachat de venin",
+          "points": 0,
+          "active": true
+        }
+      ],
+      "armor": [],
+      "options": [
+        {
+          "name_en": "Skink Oracle Wizard",
+          "name_cn": "神谕骑士法师",
+          "name_de": "Skink Oracle Wizard",
+          "name_fr": "Sorcier Oracle Skink",
+          "name_es": "Hechicero Oráculo Skink",
+          "points": 0,
+          "active": true,
+          "alwaysActive": true,
+          "options": [
+            {
+              "name_en": "Level 1 Wizard",
+              "name_cn": "1级法师",
+              "name_de": "Level 1 Wizard",
+              "name_fr": "Sorcier de Niveau 1",
+              "name_es": "Hechicero de Nivel 1",
+              "points": 0,
+              "exclusive": true,
+              "active": true
+            },
+            {
+              "name_en": "Level 2 Wizard",
+              "name_cn": "2级法师",
+              "name_de": "Level 2 Wizard",
+              "name_fr": "Sorcier de Niveau 2",
+              "name_es": "Hechicero de Nivel 2",
+              "points": 30,
+              "exclusive": true
+            }
+          ]
+        }
+      ],
+      "mounts": [],
+      "items": [
+        {
+          "name_en": "Magic Items",
+          "name_cn": "魔法物品",
+          "name_de": "Magische Gegenstände",
+          "name_es": "Objetos mágicos",
+          "name_fr": "Objets Magiques",
+          "types": [
+            "weapon",
+            "armor",
+            "talisman",
+            "banner",
+            "arcane-item",
+            "enchanted-item"
+          ],
+          "selected": [],
+          "maxPoints": 50
+        }
+      ],
+      "lores": ["battle-magic", "illusion"],
+      "specialRules": {
+        "name_en": "Arcane Vassal, Armoured Hide (3), Aquatic, Close Order, Cold Blooded {renegade}, Immune to Psychology, Large Target, Lore of Lustria {renegade}, Predatory Fighter (Troglodon only), Primeval Roar, Skink Riders, Stomp Attacks (2), Stubborn, Terror",
+        "name_cn": "奥术构造, 坚硬皮肤(3), 水生, 紧密阵型, 冷血 {renegade}, 心理免疫, 大型目标, 露丝契亚法系 {renegade}, 掠食性斗士(Troglodon only), Primeval Roar, 灵蜥骑手, 践踏攻击(2), 坚毅, 惊骇",
+        "name_de": "Arcane Vassal, Armoured Hide (3), Aquatic, Close Order, Cold Blooded, Immune to Psychology, Large Target, Lore of Lustria, Predatory Fighter (Troglodon only), Primeval Roar, Skink Riders, Stomp Attacks (2), Stubborn, Terror",
+        "name_es": "Arcane Vassal, Armoured Hide (3), Aquatic, Close Order, Cold Blooded, Immune to Psychology, Large Target, Lore of Lustria, Predatory Fighter (Troglodon only), Primeval Roar, Skink Riders, Stomp Attacks (2), Stubborn, Terror",
+        "name_fr": "Vassal Magique, Peau Blindée (3), Aquatique, Ordre Serré, Sang Froid, Immunisé à la Psychologie, Grande Cible, Domaine de Lustrie, Combattant Prédateur (Troglodon uniquement), Rugissement Primal, Cavaliers Skinks, Attaques de Piétinement (2), Obstiné, Terreur"
       }
     },
     {
@@ -2053,7 +3133,58 @@
             "name_it": "0-1 Stegadon or Troglodon per 1000 points",
             "name_pl": "0-1 Stegadon or Troglodon per 1000 points"
           }
+        }
+      },
+      "command": [],
+      "equipment": [
+        {
+          "name_en": "Hand weapons, Javelins, Great horns, Giant bow",
+          "name_cn": "单手武器, 标枪, 巨角, 巨弓",
+          "name_de": "Hand weapons, Javelins, Great horns, Giant bow",
+          "name_es": "Hand weapons, Javelins, Great horns, Giant bow",
+          "name_fr": "Armes de base, Javelines, Grandes cornes, Arc géant",
+          "points": 0,
+          "active": true
         },
+        {
+          "name_en": "Hand weapons, Javelins, Great horns, Giant blowpipes",
+          "name_cn": "单手武器, 标枪, 巨角, 巨型吹管",
+          "name_de": "Hand weapons, Javelins, Great horns, Giant blowpipes",
+          "name_es": "Hand weapons, Javelins, Great horns, Giant blowpipes",
+          "name_fr": "Armes de base, Javelines, Grandes cornes, Sarbacanes géantes",
+          "points": 0
+        },
+        {
+          "name_en": "Hand weapons, Javelins, Great horns, Engine of the Gods",
+          "name_cn": "单手武器, 标枪, 巨角, 诸神引擎",
+          "name_de": "Hand weapons, Javelins, Great horns, Engine of the Gods",
+          "name_es": "Hand weapons, Javelins, Great horns, Engine of the Gods",
+          "name_fr": "Armes de base, Javelines, Grandes cornes, Machine des Dieux",
+          "points": 25
+        }
+      ],
+      "armor": [],
+      "options": [],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_cn": "紧密阵型, 冷血, 驮轿, 心理免疫, 撞击(D3+1), 大型目标, 淬毒攻击(Javelins only), 践踏攻击(D3+2), 坚毅, 惊骇",
+        "name_de": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_es": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_fr": "Ordre Serré, Sang Froid, Howdah, Immunisé à la Psychologie, Touches d’Impact (D3+1), Grande Cible, Attaques Empoisonnées (Javelines uniquement), Attaques de Piétinement (D3+2), Obstiné, Terreur"
+      }
+    },
+    {
+      "name_en": "Ancient Stegadon {renegade}",
+      "name_cn": "远古三角龙 {renegade}",
+      "name_de": "Ancient Stegadon",
+      "name_es": "Ancient Stegadon",
+      "name_fr": "Stégadon Ancestral",
+      "id": "ancient-stegadon",
+      "points": 210,
+      "armyComposition": {
         "lm-renegade": {
           "category": "rare"
         }
@@ -2083,17 +3214,7 @@
           "name_de": "Hand weapons, Javelins, Great horns, Engine of the Gods",
           "name_es": "Hand weapons, Javelins, Great horns, Engine of the Gods",
           "name_fr": "Armes de base, Javelines, Grandes cornes, Machine des Dieux",
-          "points": 25,
-          "armyComposition": "lizardmen"
-        },
-        {
-          "name_en": "Hand weapons, Javelins, Great horns, Engine of the Gods {renegade}",
-          "name_cn": "单手武器, 标枪, 巨角, 诸神引擎",
-          "name_de": "Hand weapons, Javelins, Great horns, Engine of the Gods",
-          "name_es": "Hand weapons, Javelins, Great horns, Engine of the Gods",
-          "name_fr": "Armes de base, Javelines, Grandes cornes, Machine des Dieux",
-          "points": 25,
-          "armyComposition": "lm-renegade"
+          "points": 35
         }
       ],
       "armor": [],
@@ -2102,11 +3223,11 @@
       "items": [],
       "lores": [],
       "specialRules": {
-        "name_en": "Close Order, Cold Blooded {renegade}, Howdah {renegade}, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
-        "name_cn": "紧密阵型, 冷血 {renegade}, 驮轿 {renegade}, 心理免疫, 撞击(D3+1), 大型目标, 淬毒攻击(Javelins only), 践踏攻击(D3+2), 坚毅, 惊骇",
-        "name_de": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
-        "name_es": "Close Order, Cold Blooded, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Stomp Attacks (D3+2), Stubborn, Terror",
-        "name_fr": "Ordre Serré, Sang Froid, Howdah, Immunisé à la Psychologie, Touches d’Impact (D3+1), Grande Cible, Attaques Empoisonnées (Javelines uniquement), Attaques de Piétinement (D3+2), Obstiné, Terreur"
+        "name_en": "Close Order, Cold Blooded {renegade}, Great Horns, Howdah {renegade}, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Skink Riders, Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_cn": "紧密阵型, 冷血 {renegade}, 巨角, 驮轿 {renegade}, 心理免疫, 撞击(D3+1), 大型目标, 淬毒攻击(Javelins only), 灵蜥骑手, 践踏攻击(D3+2), 坚毅, 惊骇",
+        "name_de": "Close Order, Cold Blooded, Great Horns, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Skink Riders, Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_es": "Close Order, Cold Blooded, Great Horns, Howdah, Immune to Psychology, Impact Hits (D3+1), Large Target, Poisoned Attacks (Javelins only), Skink Riders, Stomp Attacks (D3+2), Stubborn, Terror",
+        "name_fr": "Ordre Serré, Sang Froid, Grandes Cornes, Howdah, Immunisé à la Psychologie, Touches d’Impact (D3+1), Grande Cible, Attaques Empoisonnées (Javelines uniquement), Cavaliers Skinks, Attaques de Piétinement (D3+2), Obstiné, Terreur"
       }
     }
   ],
