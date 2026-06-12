@@ -41,3 +41,7 @@ yarn-error.log*
 
 # AI assistant settings
 .claude/
+
+# local server logs
+dev-server.log
+preview.log

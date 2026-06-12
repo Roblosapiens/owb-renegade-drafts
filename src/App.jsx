@@ -93,7 +93,7 @@ export const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
       {isMobile ? (
         <Switch>
           <Route path="/editor/:listId/edit">{<EditList isMobile />}</Route>
