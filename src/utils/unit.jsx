@@ -334,20 +334,50 @@ export const getPage = (name) => {
 };
 
 const getRuleStats = (name) => {
+  if (!name) {
+    return [];
+  }
+
   const normalizedName = normalizeRuleName(name);
   const synonym = synonyms[normalizedName];
 
   return rulesMap[synonym || normalizedName]?.stats || [];
 };
 
-export const getStats = (unit, armyComposition) => {
-  const isRenegade =
-    unit.name_en.includes("renegade") && armyComposition?.includes("renegade");
-  const baseUnitName = unit.name_en.replace(" {renegade}", "");
-  let stats = getRuleStats(isRenegade ? unit.name_en : baseUnitName);
+const renegadeStatsIdFallbacks = {
+  "skink-cohorts": "skink cohorts renegade",
+};
 
-  if (stats.length === 0 && isRenegade) {
-    stats = getRuleStats(baseUnitName);
+export const getStats = (unit, armyComposition) => {
+  const unitName = unit.name_en || unit.name || "";
+  const baseUnitName = unitName.replace(" {renegade}", "");
+  const isRenegadeUnit = unitName.toLowerCase().includes("renegade");
+  const isRenegadeList = armyComposition?.includes("renegade");
+  const unitId = unit.id?.split(".")[0];
+  const lookupNames = [];
+
+  if (isRenegadeUnit) {
+    lookupNames.push(unitName);
+  }
+
+  if (isRenegadeList) {
+    lookupNames.push(`${baseUnitName} {renegade}`);
+
+    if (unitId && renegadeStatsIdFallbacks[unitId]) {
+      lookupNames.push(renegadeStatsIdFallbacks[unitId]);
+    }
+  }
+
+  lookupNames.push(baseUnitName);
+
+  let stats = [];
+
+  for (const name of lookupNames) {
+    stats = getRuleStats(name);
+
+    if (stats.length > 0) {
+      break;
+    }
   }
   const activeMount = unit.mounts
     ? unit.mounts.find((mount) => mount.active)
@@ -366,6 +396,16 @@ export const getStats = (unit, armyComposition) => {
   });
 
   return [...stats, ...mountStats, ...detachmentStats];
+};
+
+export const getUnitStats = (unit, armyComposition) => {
+  const profileStats = unit.profile?.stats;
+
+  if (profileStats?.length > 0) {
+    return profileStats;
+  }
+
+  return getStats(unit, armyComposition);
 };
 
 export const getUnitName = ({ unit, language }) => {

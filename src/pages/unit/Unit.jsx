@@ -37,7 +37,7 @@ import {
   getUnitOptionNotes,
   unitHasItem,
   isWizard,
-  getStats,
+  getUnitStats,
 } from "../../utils/unit";
 import { getGameSystems, getCustomDatasetData } from "../../utils/game-systems";
 
@@ -601,7 +601,7 @@ export const Unit = ({ isMobile, previewData = {} }) => {
       ?.specialRules || unit.specialRules;
   const listArmyComposition = list?.armyComposition || list?.army;
   const unitArmyComposition = unit.army ? unit.army : listArmyComposition;
-  const stats = unit.profile?.stats || getStats(unit, unitArmyComposition);
+  const stats = getUnitStats(unit, unitArmyComposition);
   const notes =
     unit?.armyComposition?.[unitArmyComposition]?.notes || unit.notes;
   const lores =

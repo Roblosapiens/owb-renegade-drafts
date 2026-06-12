@@ -1,6 +1,6 @@
 import { getAllOptions } from "../../utils/unit";
 import { getUnitPoints, getPoints, getAllPoints } from "../../utils/points";
-import { getStats, getUnitName } from "../../utils/unit";
+import { getUnitStats, getUnitName } from "../../utils/unit";
 import { getGameSystems } from "../../utils/game-systems";
 import { nameMap } from "../magic";
 
@@ -148,7 +148,7 @@ const getUnitsString = ({
         }${isMarkdownList ? "*" : ""}\n`;
       }
       if (showStats) {
-        const stats = unit.profile?.stats || getStats(unit, armyComposition);
+        const stats = getUnitStats(unit, armyComposition);
 
         if (!isCompactList && !isMarkdownList) {
           optionsString += "\n";

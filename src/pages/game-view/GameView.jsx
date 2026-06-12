@@ -22,7 +22,7 @@ import {
 } from "../../utils/unit";
 import { getUnitPoints, getPoints, getAllPoints } from "../../utils/points";
 import { useLanguage } from "../../utils/useLanguage";
-import { getStats, getUnitName } from "../../utils/unit";
+import { getUnitStats, getUnitName } from "../../utils/unit";
 import { editUnit } from "../../state/lists";
 import { updateSetting } from "../../state/settings";
 import { getGameSystems } from "../../utils/game-systems";
@@ -263,7 +263,7 @@ export const GameView = () => {
     return (
       <ul>
         {units.map((unit, index) => {
-          const stats = unit.profile?.stats || getStats(unit, armyComposition);
+          const stats = getUnitStats(unit, armyComposition);
           const unitGeneratedSpellCount = getUnitGeneratedSpellCount(unit);
           const specialRules =
             unit.armyComposition?.[armyComposition]?.specialRules ||

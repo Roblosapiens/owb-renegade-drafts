@@ -134,6 +134,7 @@ export const synonyms = {
   "revered guardian": "champions",
   "patrol leader": "champions",
   "sky leader": "champions",
+  "skink cohorts": "skink cohorts renegade",
   "great cannon": "cannon",
   "repeater bolt thrower": "bolt thrower",
   "bolt thrower": "bolt throwers",

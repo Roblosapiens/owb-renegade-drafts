@@ -9,7 +9,7 @@ import { Stats } from "../../components/stats";
 import { getAllOptions } from "../../utils/unit";
 import { getUnitPoints, getPoints, getAllPoints } from "../../utils/points";
 import { useLanguage } from "../../utils/useLanguage";
-import { getStats, getUnitName } from "../../utils/unit";
+import { getUnitStats, getUnitName } from "../../utils/unit";
 import { nameMap } from "../magic";
 import { getGameSystems } from "../../utils/game-systems";
 import { normalizeRuleName } from "../../utils/string";
@@ -240,7 +240,7 @@ export const Print = () => {
     return (
       <>
         {units.map((unit) => {
-          const stats = unit.profile?.stats || getStats(unit, armyComposition);
+          const stats = getUnitStats(unit, armyComposition);
           const specialRules =
             unit.armyComposition?.[armyComposition]?.specialRules ||
             unit.specialRules;
