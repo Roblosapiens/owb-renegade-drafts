@@ -6692,7 +6692,7 @@
       "name_es": "Hoja llorona",
       "name_fr": "Lame Suintante",
       "name_it": "Weeping Lama",
-      "points": 50,
+      "points": 40,
       "type": "weapon",
       "onePerArmy": true,
       "name": "weeping blade"
@@ -6704,7 +6704,7 @@
       "name_es": "Hoja de Nurglitch",
       "name_fr": "Lame de Nurglitch",
       "name_it": "Lama of Nurglitch",
-      "points": 35,
+      "points": 15,
       "type": "weapon",
       "onePerArmy": true,
       "name": "blade of nurglitch"
@@ -6729,7 +6729,7 @@
       "name_es": "Armadura de piedra bruja*",
       "name_fr": "Armure d’Éclats de Malepierre*",
       "name_it": "Warpstone Armour*",
-      "points": 25,
+      "points": 15,
       "stackable": true,
       "type": "armor",
       "onePerArmy": false,
@@ -6754,7 +6754,7 @@
       "name_es": "Armadura de piedra bruja*",
       "name_fr": "Armure d’Éclats de Malepierre*",
       "name_it": "Warpstone Armour*",
-      "points": 25,
+      "points": 15,
       "stackable": true,
       "type": "armor-mages",
       "onePerArmy": false,
@@ -6791,7 +6791,7 @@
       "name_es": "Estandarte de tormenta",
       "name_fr": "Bannière d’Orage",
       "name_it": "Storm Banner",
-      "points": 65,
+      "points": 75,
       "type": "banner",
       "onePerArmy": true,
       "name": "storm banner"
@@ -6803,7 +6803,7 @@
       "name_es": "Gran Estandarte de Superioridad",
       "name_fr": "Bannière de Supériorité",
       "name_it": "Grand Banner of Superiority",
-      "points": 50,
+      "points": 40,
       "type": "banner",
       "onePerArmy": true,
       "name": "grand banner of superiority"
@@ -6831,6 +6831,25 @@
       "type": "banner",
       "onePerArmy": true,
       "name": "banner of verminous scurrying"
+    },
+    {
+      "name_de": "Seuchenbanner",
+      "name_en": "Plague Banner",
+      "name_cn": "瘟疫旗帜",
+      "name_es": "Estandarte de la plaga",
+      "name_fr": "Bannière de la Peste",
+      "name_it": "Plague Banner",
+      "points": 30,
+      "type": "banner",
+      "onePerArmy": true,
+      "name": "plague banner",
+      "notes": {
+        "name_en": "Plague Monks only",
+        "name_cn": "仅限瘟疫僧",
+        "name_de": "Nur Seuchenmönche",
+        "name_es": "Plague Monks only",
+        "name_fr": "Moines de la Peste uniquement"
+      }
     },
     {
       "name_de": "Messingkugel",
@@ -6888,7 +6907,7 @@
       "name_es": "Demonio de la tormenta",
       "name_fr": "Orbe des Tempêtes",
       "name_it": "Storm Daemon",
-      "points": 30,
+      "points": 40,
       "type": "arcane-item",
       "onePerArmy": true,
       "name": "storm daemon"

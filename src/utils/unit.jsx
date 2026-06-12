@@ -345,6 +345,7 @@ const getRuleStats = (name) => {
 };
 
 const renegadeStatsIdFallbacks = {
+  "skaven-dregs": "skaven dregs renegade",
   "skink-cohorts": "skink cohorts renegade",
 };
 

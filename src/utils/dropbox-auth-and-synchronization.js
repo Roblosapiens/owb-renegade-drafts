@@ -8,7 +8,15 @@ import { setLists } from "../state/lists";
 import { getSyncFile, getDataFile } from "./file";
 import { parseQueryString } from "../utils/query-string";
 
-const clientId = "7l38e9ahse786da";
+const clientId =
+  import.meta.env.VITE_DROPBOX_CLIENT_ID || "7l38e9ahse786da";
+
+const getDropboxRedirectUri = () => {
+  const base = import.meta.env.BASE_URL || "/";
+
+  return `${window.location.origin}${base.endsWith("/") ? base : `${base}/`}`;
+};
+
 const dbxAuth = new DropboxAuth({
   clientId,
 });
@@ -76,12 +84,7 @@ export const useDropboxAuthentication = () => {
 
       dbxAuth.setCodeVerifier(window.sessionStorage.getItem("codeVerifier"));
       dbxAuth
-        .getAccessTokenFromCode(
-          process.env.NODE_ENV === "development"
-            ? "http://localhost:5173/"
-            : "https://old-world-builder.com/",
-          code,
-        )
+        .getAccessTokenFromCode(getDropboxRedirectUri(), code)
         .then((response) => {
           dbxAuth.setAccessToken(response.result.access_token);
           dbxAuth.setRefreshToken(response.result.refresh_token);
@@ -118,9 +121,7 @@ export const useDropboxAuthentication = () => {
 export const login = ({ dispatch }) => {
   dbxAuth
     .getAuthenticationUrl(
-      process.env.NODE_ENV === "development"
-        ? "http://localhost:5173/"
-        : "https://old-world-builder.com/",
+      getDropboxRedirectUri(),
       null,
       "code",
       "offline",
@@ -353,10 +354,7 @@ export const syncLists = ({ dispatch }) => {
         updateLogin({ isSyncing: false, loggedIn: false, loginLoading: false }),
       );
       isSyncing = false;
-      window.location.href =
-        process.env.NODE_ENV === "development"
-          ? "http://localhost:5173/"
-          : "https://old-world-builder.com/";
+      window.location.href = getDropboxRedirectUri();
       localStorage.setItem("owb.accessToken", "");
       localStorage.setItem("owb.refreshToken", "");
     });

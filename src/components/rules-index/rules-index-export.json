@@ -18197,6 +18197,25 @@
     "troopType": "LCa",
     "page": "FoF, p. 135"
   },
+  "skaven dregs renegade": {
+    "url": "unit/skaven-dregs-renegade",
+    "stats": [
+      {
+        "A": "1",
+        "I": "4",
+        "M": "5",
+        "S": "3",
+        "T": "3",
+        "W": "1",
+        "BS": "2",
+        "Ld": "2",
+        "WS": "2",
+        "Name": "Dreg-rat"
+      }
+    ],
+    "troopType": "RI",
+    "page": "TRLP, p. 9"
+  },
   "skaven chieftain": {
     "url": "unit/skaven-chieftain",
     "stats": [
