@@ -42,7 +42,8 @@ const persistCache = () => {
   } catch {}
 };
 
-export const fetchRuleDescription = async (rulePath) => {
+export const fetchRuleDescription = async (rulePath, localDescription) => {
+  if (localDescription) return localDescription;
   if (cache.has(rulePath)) return cache.get(rulePath);
 
   try {

@@ -39,11 +39,12 @@ const collectUniqueRules = (list, armyComposition) => {
         if (seen.has(normalized)) continue;
         const synonym = synonyms[normalized];
         const ruleData = rulesMap[normalized] || rulesMap[synonym];
-        if (ruleData?.url) {
+        if (ruleData?.url || ruleData?.description) {
           seen.set(normalized, {
               displayName,
               rulePath: ruleData.url,
               pageRef: ruleData.page || null,
+              localDescription: ruleData.description || null,
             });
         }
       }
@@ -89,8 +90,11 @@ export const Print = () => {
     if (rules.length === 0) return;
     setIsLoadingDescriptions(true);
     Promise.all(
-      rules.map(({ rulePath }) =>
-        fetchRuleDescription(rulePath).then((desc) => [rulePath, desc])
+      rules.map(({ rulePath, localDescription }) =>
+        fetchRuleDescription(rulePath, localDescription).then((desc) => [
+          rulePath || localDescription,
+          desc,
+        ])
       )
     ).then((results) => {
       setRuleDescriptions(Object.fromEntries(results));
@@ -524,12 +528,13 @@ export const Print = () => {
               ) : (
                 <dl className="print__rules-list">
                   {collectUniqueRules(list, armyComposition).map(
-                    ({ displayName, rulePath, pageRef }) => {
-                      const desc = ruleDescriptions[rulePath];
+                    ({ displayName, rulePath, pageRef, localDescription }) => {
+                      const descKey = rulePath || localDescription;
+                      const desc = ruleDescriptions[descKey];
                       const content = desc || pageRef;
                       if (!content) return null;
                       return (
-                        <div key={rulePath} className="print__rule-entry">
+                        <div key={descKey} className="print__rule-entry">
                           <dt>{displayName}</dt>
                           <dd className={!desc ? "print__rule-pageref" : undefined}>
                             {content}

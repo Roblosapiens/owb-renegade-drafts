@@ -32,10 +32,24 @@ export const RulesIndex = () => {
   const synonym = synonyms[normalizedName];
   const ruleData = rulesMap[normalizedName] || rulesMap[synonym];
   const rulePath = ruleData?.url;
+  const localDescription = ruleData?.description;
+  const displayName = activeRule.replace(/ *\{[^)]*\}/g, "").trim();
 
   return (
     <Dialog open={open} onClose={handleClose}>
-      {rulePath ? (
+      {localDescription ? (
+        <div className="rules-index__local">
+          <h2 className="rules-index__title">{displayName}</h2>
+          {ruleData.page && (
+            <p className="rules-index__source">Source: {ruleData.page}</p>
+          )}
+          {localDescription.split("\n\n").map((paragraph) => (
+            <p className="rules-index__text" key={paragraph.slice(0, 40)}>
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      ) : rulePath ? (
         <>
           <iframe
             onLoad={() => setIsLoading(false)}
