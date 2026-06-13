@@ -115,6 +115,19 @@ const additionalOWBRules = {
 };
 
 export const synonyms = {
+  "if one head is severed another takes its place": "if one head is severed another takes its place renegade",
+  "singular essence": "singular essence renegade",
+  "entourage": "entourage renegade",
+  "ogre club": "ogre club renegade",
+  "life is cheap": "life is cheap renegade",
+  "dodge": "dodge renegade",
+  "warpstone spikes": "warpstone spikes renegade",
+  "plague disciples": "plague disciples renegade",
+  "expendable": "expendable renegade",
+  "cornered rats": "cornered rats renegade",
+  "chameleon": "chameleon renegade",
+  "skirmish": "skirmish renegade",
+  "strikes first": "strike first",
   "the witch": "suffer not...",
   "the revenant": "suffer not...",
   "the mutant": "suffer not...",
