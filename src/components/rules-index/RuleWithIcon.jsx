@@ -4,10 +4,9 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 import { Button } from "../button";
-import { normalizeRuleName } from "../../utils/string";
 import { openRulesIndex } from "../../state/rules-index";
 
-import { rulesMap, synonyms } from "./rules-map";
+import { lookupRule } from "./rules-map";
 import "./RuleWithIcon.css";
 
 export const RuleWithIcon = ({ name, isDark, className }) => {
@@ -18,10 +17,7 @@ export const RuleWithIcon = ({ name, isDark, className }) => {
     return null;
   }
 
-  const normalizedName = normalizeRuleName(name);
-  const synonym = synonyms[normalizedName];
-
-  return rulesMap[normalizedName] || rulesMap[synonym] ? (
+  return lookupRule(name) ? (
     <Button
       type="text"
       className={classNames("rule-icon", className && className)}

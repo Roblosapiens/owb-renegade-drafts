@@ -1,4 +1,5 @@
 import rulesIndexExport from "./rules-index-export.json";
+import { normalizeRuleName } from "../../utils/string";
 
 const additionalOWBRules = {
   "throwing spears": { url: "weapons-of-war/throwing-spear" },
@@ -347,4 +348,28 @@ export const synonyms = {
 export const rulesMap = {
   ...rulesIndexExport,
   ...additionalOWBRules,
+};
+
+export const lookupRule = (name) => {
+  if (!name) return null;
+
+  const normalizedFull = normalizeRuleName(name);
+  const normalizedStripped = normalizeRuleName(
+    name.replace(/ *\{[^)]*\}/g, "").trim(),
+  );
+
+  const keys = [
+    normalizedFull,
+    synonyms[normalizedFull],
+    normalizedStripped,
+    synonyms[normalizedStripped],
+  ].filter(Boolean);
+
+  for (const key of keys) {
+    if (rulesMap[key]) {
+      return rulesMap[key];
+    }
+  }
+
+  return null;
 };
