@@ -994,7 +994,7 @@
           "points": 6
         },
         {
-          "name_en": "Doomrocket (0-1 per army)",
+          "name_en": "Doomrocket {renegade} (0-1 per army)",
           "name_cn": "末日火箭 (每军0-1)",
           "name_de": "Doomrocket (0-1 per army)",
           "name_es": "Doomrocket (0-1 per army)",
@@ -1043,7 +1043,7 @@
           "alwaysActive": true
         },
         {
-          "name_en": "Warlock Optics",
+          "name_en": "Warlock Optics {renegade}",
           "name_cn": "工程术士瞄准镜",
           "name_de": "Warlock Optics",
           "name_es": "Warlock Optics",

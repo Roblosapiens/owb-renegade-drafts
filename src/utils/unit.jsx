@@ -347,9 +347,10 @@ const getRuleStats = (name) => {
 const renegadeStatsIdFallbacks = {
   "skaven-dregs": "skaven dregs renegade",
   "skink-cohorts": "skink cohorts renegade",
-  "infernal-overseer": "infernal castellan renegade",
-  "chaos-dwarf-warriors": "infernal guard renegade",
-  "blunderbuss-decimators": "infernal guard renegade",
+  "infernal-overseer": "infernal overseer renegade",
+  "chaos-dwarf-warriors": "chaos dwarf warriors renegade",
+  "blunderbuss-decimators": "blunderbuss decimators renegade",
+  "ripperdactyl-riders": "ripperdactyl riders renegade",
 };
 
 export const getStats = (unit, armyComposition) => {
@@ -386,7 +387,17 @@ export const getStats = (unit, armyComposition) => {
   const activeMount = unit.mounts
     ? unit.mounts.find((mount) => mount.active)
     : null;
-  const mountStats = getUnitRuleData(activeMount?.name_en || "")?.stats || [];
+  const mountName = activeMount?.name_en || "";
+  let mountStats = getUnitRuleData(mountName)?.stats || [];
+  if (armyComposition?.includes("renegade") && mountName) {
+    let renegadeMountStats = getRuleStats(`${mountName} renegade`);
+    if (renegadeMountStats.length === 0) {
+      renegadeMountStats = getRuleStats(`${mountName} {renegade}`);
+    }
+    if (renegadeMountStats.length > 0) {
+      mountStats = renegadeMountStats;
+    }
+  }
   const detachments = unit.detachments || [];
   const detachmentStats = [];
 

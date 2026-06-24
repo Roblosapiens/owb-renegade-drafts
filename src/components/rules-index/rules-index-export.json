@@ -23607,5 +23607,173 @@
     "url": "special-rules/if-one-head-is-severed-another-takes-its-place-renegade",
     "page": "TRDE, p. 20",
     "description": "In your Command sub-phase roll a D6 for each wound that the War Hydra has lost. On each roll of a 4+ the War Hydra immediately recovers a wound."
+  },
+  "ripperdactyl renegade": {
+    "url": "unit/ripperdactyl-renegade",
+    "stats": [
+      {
+        "A": "3",
+        "I": "3",
+        "M": "2",
+        "S": "4",
+        "T": "(+1)",
+        "W": "(+1)",
+        "BS": "-",
+        "Ld": "-",
+        "WS": "4",
+        "Name": "Ripperdactyl"
+      }
+    ],
+    "troopType": "MCa",
+    "page": "TRLP, p. 11"
+  },
+  "ripperdactyl riders renegade": {
+    "url": "unit/ripperdactyl-riders-renegade",
+    "stats": [
+      {
+        "A": "1",
+        "I": "4",
+        "M": "-",
+        "S": "3",
+        "T": "3",
+        "W": "2",
+        "BS": "3",
+        "Ld": "5",
+        "WS": "2",
+        "Name": "Ripperdactyl Rider"
+      },
+      {
+        "A": "2",
+        "I": "4",
+        "M": "-",
+        "S": "3",
+        "T": "3",
+        "W": "2",
+        "BS": "3",
+        "Ld": "5",
+        "WS": "2",
+        "Name": "Ripperdactyl Champion"
+      },
+      {
+        "A": "3",
+        "I": "3",
+        "M": "2",
+        "S": "4",
+        "T": "-",
+        "W": "-",
+        "BS": "-",
+        "Ld": "-",
+        "WS": "4",
+        "Name": "Ripperdactyl"
+      }
+    ],
+    "troopType": "MCa",
+    "page": "TRLP, p. 11"
+  },
+  "chaos dwarf warriors renegade": {
+    "url": "unit/chaos-dwarf-warriors-renegade",
+    "stats": [
+      {
+        "M": "3",
+        "WS": "4",
+        "BS": "3",
+        "S": "3",
+        "T": "4",
+        "W": "1",
+        "I": "2",
+        "A": "1",
+        "Ld": "9",
+        "Name": "Chaos Dwarf Warrior"
+      },
+      {
+        "M": "3",
+        "WS": "4",
+        "BS": "3",
+        "S": "3",
+        "T": "4",
+        "W": "1",
+        "I": "2",
+        "A": "2",
+        "Ld": "9",
+        "Name": "Veteran Warrior"
+      }
+    ],
+    "troopType": "HI",
+    "page": "TRCD, p. core"
+  },
+  "blunderbuss decimators renegade": {
+    "url": "unit/blunderbuss-decimators-renegade",
+    "stats": [
+      {
+        "M": "3",
+        "WS": "3",
+        "BS": "3",
+        "S": "3",
+        "T": "4",
+        "W": "1",
+        "I": "2",
+        "A": "1",
+        "Ld": "9",
+        "Name": "Blunderbuss Decimator"
+      },
+      {
+        "M": "3",
+        "WS": "3",
+        "BS": "4",
+        "S": "3",
+        "T": "4",
+        "W": "1",
+        "I": "2",
+        "A": "1",
+        "Ld": "9",
+        "Name": "Decimator"
+      }
+    ],
+    "troopType": "HI",
+    "page": "TRCD, p. core"
+  },
+  "infernal overseer renegade": {
+    "url": "unit/infernal-overseer-renegade",
+    "stats": [
+      {
+        "A": "4",
+        "I": "3",
+        "M": "3",
+        "S": "5",
+        "T": "5",
+        "W": "3",
+        "BS": "4",
+        "Ld": "10",
+        "WS": "6",
+        "Name": "Infernal Overseer"
+      }
+    ],
+    "troopType": "HI",
+    "page": "TRCD, p. characters"
+  },
+  "doomrocket renegade": {
+    "url": "weapons-of-war/doomrocket-renegade",
+    "page": "TRSK, p. characters",
+    "description": "Range 36\", Strength 5(10), Armour Piercing -2, Bombardment, Multiple Wounds (D3+1). One use only. This weapon shoots like a stone thrower, using the Bombardment special rule, a 5\" blast template and the Skaven Misfire table. The Multiple Wounds (D3+1) special rule applies only to a single model whose base lies underneath the central hole of the blast template."
+  },
+  "warlock optics renegade": {
+    "url": "special-rules/warlock-optics-renegade",
+    "page": "TRSK, p. characters",
+    "description": "This model has a +1 modifier to their Ballistic Skill characteristic and the Ignores Cover special rule."
+  },
+  "steam carriage renegade": {
+    "url": "special-rules/steam-carriage-renegade",
+    "page": "TRCD, p. rare",
+    "description": "This war machine has the Steam Carriage upgrade. During the Movement phase, up to two friendly war machines with the Steam Carriage upgrade that are completely within a Bull Centaur Render's rear arc and within 8\" of its base at the beginning of the phase may replace their Movement characteristic with that model's when it moves. These war machines must finish their movement completely within that model's rear arc and within 8\" of its base. Unless the Bull Centaur Render moves using the Lumbering Destruction special rule or makes a charge move, these war machines are not considered to have moved this turn."
+  },
+  "no daemonic alignment renegade": {
+    "url": "special-rules/no-daemonic-alignment-renegade",
+    "page": "TRDOC, p. characters",
+    "description": "This Daemon Prince has no Daemonic alignment. It does not gain any of the Daemons of Khorne, Nurgle, Slaanesh, or Tzeentch special rules, but unlike an aligned Prince of Khorne it may be taken as a Wizard."
+  },
+  "carriage hauler renegade": {
+    "url": "special-rules/carriage-hauler-renegade",
+    "page": "TRCD, p. special",
+    "description": "During the Movement phase, up to two friendly war machines with the Steam Carriage upgrade that are completely within this model's rear arc and within 8\" of its base at the beginning of the phase can be moved when this model moves and may replace their Movement characteristic with this model's. These war machines must finish their movement completely within this model's rear arc and within 8\" of its base. Unless this model moves using the Lumbering Destruction special rule or makes a charge move, these war machines are not considered to have moved this turn."
   }
 }

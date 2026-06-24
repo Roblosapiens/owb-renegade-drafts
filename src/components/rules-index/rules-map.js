@@ -116,6 +116,21 @@ const additionalOWBRules = {
 };
 
 export const synonyms = {
+  "carriage hauler": "carriage hauler renegade",
+  "ba'hal": "champions",
+  manburner: "champions",
+  decimator: "champions",
+  "veteran warrior": "champions",
+  "no daemonic alignment": "no daemonic alignment renegade",
+  "steam carriage": "steam carriage renegade",
+  "warlock optics": "warlock optics renegade",
+  doomrocket: "doomrocket renegade",
+  "blunderbuss decimators": "blunderbuss decimators renegade",
+  "chaos dwarf warriors": "chaos dwarf warriors renegade",
+  "infernal overseer": "infernal overseer renegade",
+  "weapon team warp grinder renegade": "weapon team renegade",
+  "weapon team warp grinder": "weapon team renegade",
+  "fiery breath": "fiery breath lizardmen",
   "if one head is severed another takes its place": "if one head is severed another takes its place renegade",
   "singular essence": "singular essence renegade",
   "entourage": "entourage renegade",

@@ -3,11 +3,10 @@ import { useDispatch } from "react-redux";
 import { useIntl } from "react-intl";
 
 import { Button } from "../button";
-import { normalizeRuleName } from "../../utils/string";
 import { useLanguage } from "../../utils/useLanguage";
 import { openRulesIndex } from "../../state/rules-index";
 
-import { rulesMap, synonyms } from "./rules-map";
+import { lookupRule } from "./rules-map";
 
 export const RulesWithIcon = ({ textObject }) => {
   const dispatch = useDispatch();
@@ -25,8 +24,7 @@ export const RulesWithIcon = ({ textObject }) => {
   return ruleButtons.map((rule, index) => {
     return (
       <Fragment key={`${rule}-${index}`}>
-        {rulesMap[normalizeRuleName(textEn[index])] ||
-        rulesMap[synonyms[normalizeRuleName(textEn[index])]] ? (
+        {lookupRule(textEn[index]) ? (
           <span className="unit__rule-wrapper">
             {rule
               .replace(/\[/g, "")
