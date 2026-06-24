@@ -3000,7 +3000,7 @@
       ],
       "equipment": [
         {
-          "name_en": "Hand weapon and Hailshot blunderbuss",
+          "name_en": "Hand weapons, Hailshot blunderbuss",
           "name_fr": "Arme de base et Tromblon Grêle-de-Tir",
           "points": 0,
           "perModel": true,
@@ -3436,7 +3436,7 @@
           "perModel": true
         },
         {
-          "name_en": "Fireglaives and Blackshard Armour",
+          "name_en": "Fireglaives, Blackshard Armour",
           "name_fr": "Glaive Ardents et Armure Sombréclat",
           "points": 2,
           "perModel": true
@@ -4060,7 +4060,7 @@
           "maximum": 0
         },
         {
-          "name_en": "Steam Carriage",
+          "name_en": "Steam Carriage {renegade}",
           "name_cn": "蒸汽车厢",
           "name_de": "Steam Carriage",
           "name_es": "Steam Carriage",
@@ -4157,7 +4157,7 @@
           "maximum": 0
         },
         {
-          "name_en": "Steam Carriage",
+          "name_en": "Steam Carriage {renegade}",
           "name_cn": "蒸汽车厢",
           "name_de": "Steam Carriage",
           "name_es": "Steam Carriage",
@@ -4554,7 +4554,7 @@
           "maximum": 0
         },
         {
-          "name_en": "Steam Carriage",
+          "name_en": "Steam Carriage {renegade}",
           "name_cn": "蒸汽车厢",
           "name_de": "Steam Carriage",
           "name_es": "Steam Carriage",
@@ -4775,7 +4775,7 @@
           "maximum": 0
         },
         {
-          "name_en": "Steam Carriage",
+          "name_en": "Steam Carriage {renegade}",
           "name_cn": "蒸汽车厢",
           "name_de": "Steam Carriage",
           "name_es": "Steam Carriage",
@@ -4981,7 +4981,7 @@
           "maximum": 0
         },
         {
-          "name_en": "Steam Carriage",
+          "name_en": "Steam Carriage {renegade}",
           "name_cn": "蒸汽车厢",
           "name_de": "Steam Carriage",
           "name_es": "Steam Carriage",

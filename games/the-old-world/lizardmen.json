@@ -48,7 +48,9 @@
           "points": 25,
           "exclusive": false,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 0
           },
           "name_fr": "Porteur de la Grande Bannière"
@@ -104,7 +106,9 @@
           "name_de": "Disciplines of the Old Ones",
           "name_es": "Disciplines of the Old Ones",
           "name_fr": "Disciplines Ancestrales",
-          "types": ["discipline-old-ones"],
+          "types": [
+            "discipline-old-ones"
+          ],
           "selected": [],
           "maxPoints": 0,
           "armyComposition": {
@@ -304,7 +308,13 @@
           "name_de": "Magische Gegenstände",
           "name_es": "Objetos mágicos",
           "name_fr": "Objets Magiques",
-          "types": ["weapon", "armor", "talisman", "banner", "enchanted-item"],
+          "types": [
+            "weapon",
+            "armor",
+            "talisman",
+            "banner",
+            "enchanted-item"
+          ],
           "selected": [],
           "maxPoints": 100
         }
@@ -355,7 +365,9 @@
           "name_de": "Battle Standard Bearer",
           "points": 25,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 0
           },
           "name_fr": "Porteur de la Grande Bannière"
@@ -486,7 +498,13 @@
           "name_de": "Magische Gegenstände",
           "name_es": "Objetos mágicos",
           "name_fr": "Objets Magiques",
-          "types": ["weapon", "armor", "talisman", "banner", "enchanted-item"],
+          "types": [
+            "weapon",
+            "armor",
+            "talisman",
+            "banner",
+            "enchanted-item"
+          ],
           "selected": [],
           "maxPoints": 50
         }
@@ -702,7 +720,11 @@
           "maxPoints": 50
         }
       ],
-      "lores": ["elementalism", "battle-magic", "illusion"],
+      "lores": [
+        "elementalism",
+        "battle-magic",
+        "illusion"
+      ],
       "specialRules": {
         "name_en": "Arcane Vassal, Aquatic**, Cold Blooded {renegade}, Lore of Lustria {renegade}",
         "name_cn": "奥术构造, 水生**, 冷血 {renegade}, 露丝契亚法系",
@@ -755,7 +777,9 @@
           "name_de": "Battle Standard Bearer",
           "points": 25,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 0
           },
           "name_fr": "Porteur de la Grande Bannière"
@@ -958,7 +982,12 @@
           "name_de": "Magische Gegenstände",
           "name_es": "Objetos mágicos",
           "name_fr": "Objets Magiques",
-          "types": ["weapon", "armor", "talisman", "enchanted-item"],
+          "types": [
+            "weapon",
+            "armor",
+            "talisman",
+            "enchanted-item"
+          ],
           "selected": [],
           "maxPoints": 50
         }
@@ -1006,7 +1035,12 @@
           "name_fr": "Premier de Couvée (champion)",
           "points": 7,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 25
           },
           "name_it": "Spawn Leader (champion)"
@@ -1121,7 +1155,12 @@
           "name_fr": "Premier de Couvée (champion)",
           "points": 6,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 25
           },
           "name_it": "Spawn Leader (champion)"
@@ -1134,7 +1173,9 @@
           "name_fr": "Porte-étendard",
           "points": 6,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 50
           },
           "notes": {
@@ -1251,7 +1292,12 @@
           "name_fr": "Gardien Révéré (champion)",
           "points": 7,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 50
           }
         },
@@ -1263,7 +1309,9 @@
           "name_fr": "Porte-étendard",
           "points": 7,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 100
           }
         },
@@ -1353,7 +1401,12 @@
           "name_fr": "Gardien Révéré (champion)",
           "points": 7,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 50
           }
         },
@@ -1365,7 +1418,9 @@
           "name_fr": "Porte-étendard",
           "points": 7,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 100
           }
         },
@@ -1454,7 +1509,12 @@
           "name_fr": "Gardien Révéré (champion)",
           "points": 7,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 50
           }
         },
@@ -1466,7 +1526,9 @@
           "name_fr": "Porte-étendard",
           "points": 7,
           "magic": {
-            "types": ["banner"],
+            "types": [
+              "banner"
+            ],
             "maxPoints": 100
           }
         },
@@ -2175,7 +2237,12 @@
           "name_fr": "Chef Céleste (champion)",
           "points": 6,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 25
           },
           "armyComposition": "lm-renegade"
@@ -2301,7 +2368,12 @@
           "name_fr": "Champion Entérodactyle",
           "points": 6,
           "magic": {
-            "types": ["weapon", "armor", "talisman", "enchanted-item"],
+            "types": [
+              "weapon",
+              "armor",
+              "talisman",
+              "enchanted-item"
+            ],
             "maxPoints": 25
           },
           "armyComposition": "lm-renegade"
@@ -2483,7 +2555,9 @@
           "name_de": "Magical Standard",
           "name_es": "Magical Standard",
           "name_fr": "Bannière Magique",
-          "types": ["banner"],
+          "types": [
+            "banner"
+          ],
           "selected": [],
           "maxPoints": 50
         }
@@ -2753,7 +2827,7 @@
       "command": [],
       "equipment": [
         {
-          "name_en": "Wicked claws, Fiery breath",
+          "name_en": "Wicked claws, Fiery breath {lizardmen}",
           "name_cn": "恶毒之爪, 火焰吐息",
           "name_de": "Wicked claws, Fiery breath",
           "name_es": "Wicked claws, Fiery breath",
@@ -2816,7 +2890,7 @@
       "command": [],
       "equipment": [
         {
-          "name_en": "Wicked claws, Fiery breath (Salamander), Hand weapons (Skink Handlers)",
+          "name_en": "Wicked claws, Fiery breath {renegade}, Hand weapons (Skink Handlers)",
           "name_cn": "恶毒之爪, 火焰吐息 (Salamander), 单手武器 (Skink Handlers)",
           "name_de": "Wicked claws, Fiery breath (Salamander), Hand weapons (Skink Handlers)",
           "name_es": "Wicked claws, Fiery breath (Salamander), Hand weapons (Skink Handlers)",
@@ -3144,7 +3218,10 @@
           "maxPoints": 50
         }
       ],
-      "lores": ["battle-magic", "illusion"],
+      "lores": [
+        "battle-magic",
+        "illusion"
+      ],
       "specialRules": {
         "name_en": "Arcane Vassal, Armoured Hide (3), Aquatic, Close Order, Cold Blooded {renegade}, Immune to Psychology, Large Target, Lore of Lustria {renegade}, Predatory Fighter (Troglodon only), Primeval Roar, Skink Riders, Stomp Attacks (2), Stubborn, Terror",
         "name_cn": "奥术构造, 坚硬皮肤(3), 水生, 紧密阵型, 冷血 {renegade}, 心理免疫, 大型目标, 露丝契亚法系 {renegade}, 掠食性斗士(Troglodon only), Primeval Roar, 灵蜥骑手, 践踏攻击(2), 坚毅, 惊骇",
