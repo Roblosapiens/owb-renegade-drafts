@@ -9,6 +9,7 @@ import {
   createMinNonCharacters,
   generalIsHierophant,
   generalIsWizard,
+  grandMeleeMaxModelsSingleUnit,
   generalLeadership,
   grandMeleeWizardLimits,
   hierophantChecks,
@@ -26,6 +27,7 @@ export const validateList = ({ list, language, intl }) => {
         0.25 * list.points,
         "characters",
         "misc.error.grandMelee25",
+        true,
       ),
     );
     checks.push(
@@ -33,6 +35,7 @@ export const validateList = ({ list, language, intl }) => {
         0.25 * list.points,
         "core",
         "misc.error.grandMelee25",
+        true,
       ),
     );
     checks.push(
@@ -40,6 +43,7 @@ export const validateList = ({ list, language, intl }) => {
         0.25 * list.points,
         "special",
         "misc.error.grandMelee25",
+        true,
       ),
     );
     checks.push(
@@ -47,6 +51,7 @@ export const validateList = ({ list, language, intl }) => {
         0.25 * list.points,
         "rare",
         "misc.error.grandMelee25",
+        true,
       ),
     );
     checks.push(
@@ -54,9 +59,11 @@ export const validateList = ({ list, language, intl }) => {
         0.25 * list.points,
         "mercenaries",
         "misc.error.grandMelee25",
+        true,
       ),
     );
     checks.push(grandMeleeWizardLimits);
+    checks.push(grandMeleeMaxModelsSingleUnit);
   }
   if (list.compositionRule && list.compositionRule.includes("combined-arms")) {
     const additionalUnits = Math.max(
@@ -112,6 +119,7 @@ export const validateList = ({ list, language, intl }) => {
         0.25 * list.points,
         "characters",
         "misc.error.battleMarch25PercentPerCharacter",
+        false,
       ),
     );
     checks.push(
@@ -119,6 +127,7 @@ export const validateList = ({ list, language, intl }) => {
         0.35 * list.points,
         "core",
         "misc.error.battleMarch35PercentPerCore",
+        false,
       ),
     );
     checks.push(
@@ -126,6 +135,7 @@ export const validateList = ({ list, language, intl }) => {
         0.3 * list.points,
         "special",
         "misc.error.battleMarch30PercentPerSpecial",
+        false,
       ),
     );
     checks.push(
@@ -133,6 +143,7 @@ export const validateList = ({ list, language, intl }) => {
         0.25 * list.points,
         "rare",
         "misc.error.battleMarch25PercentPerRare",
+        false,
       ),
     );
     checks.push(
@@ -140,6 +151,7 @@ export const validateList = ({ list, language, intl }) => {
         0.25 * list.points,
         "mercenaries",
         "misc.error.battleMarch25PercentPerMercenary",
+        false,
       ),
     );
   } else {

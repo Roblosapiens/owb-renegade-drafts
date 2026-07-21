@@ -253,23 +253,27 @@ export function createMinNonCharacters(minNum, notCountedTypes, errorMsg) {
 /**
  * Factory function for creating checks for if a single unit in the
  * target category exceeds a given point value.
+ * skipNamed is for Grand Melee, where named characters are ignored
+ * for these checks.
  */
-export function createMaxPointsSingleUnit(maxPoints, unitCategory, errorMsg) {
+export function createMaxPointsSingleUnit(maxPoints, unitCategory, errorMsg, skipNamed) {
   return (list) => {
     const errors = [];
     list[unitCategory] &&
       list[unitCategory].forEach((unit) => {
-        const unitPoints = getUnitPoints(
-          { ...unit, type: unitCategory },
-          {
-            armyComposition: list.armyComposition || list.army,
-          },
-        );
-        if (unitPoints > maxPoints) {
-          errors.push({
-            message: errorMsg,
-            section: unitCategory,
-          });
+        if (!(!!skipNamed && unit.named)) {
+          const unitPoints = getUnitPoints(
+            { ...unit, type: unitCategory },
+            {
+              armyComposition: list.armyComposition || list.army,
+            },
+          );
+          if (unitPoints > maxPoints) {
+            errors.push({
+              message: errorMsg,
+              section: unitCategory,
+            });
+          }
         }
       });
     return errors;
@@ -278,7 +282,7 @@ export function createMaxPointsSingleUnit(maxPoints, unitCategory, errorMsg) {
 
 /**
  * In Grand Melee, an army can only have 1 level 3 wizard per 1000 points,
- * and 1 level 4 wizard per 2000 points.
+ * and 1 level 4 wizard per 2000 points. Named characters are ignored.
  */
 export const grandMeleeWizardLimits = (list) => {
   const errors = [];
@@ -291,24 +295,30 @@ export const grandMeleeWizardLimits = (list) => {
 
   list?.characters &&
     list.characters.forEach((unit) => {
-      getWizardLevels(unit).forEach((numberAtThisLevel, level) => {
-        characterWizards[level] += numberAtThisLevel;
-        totalWizards[level] += numberAtThisLevel;
-      });
+      if (!unit.named) {
+        getWizardLevels(unit).forEach((numberAtThisLevel, level) => {
+          characterWizards[level] += numberAtThisLevel;
+          totalWizards[level] += numberAtThisLevel;
+        });
+      }
     });
   list?.special &&
     list.special.forEach((unit) => {
-      getWizardLevels(unit).forEach((numberAtThisLevel, level) => {
-        specialWizards[level] += numberAtThisLevel;
-        totalWizards[level] += numberAtThisLevel;
-      });
+      if (!unit.named) {
+        getWizardLevels(unit).forEach((numberAtThisLevel, level) => {
+          specialWizards[level] += numberAtThisLevel;
+          totalWizards[level] += numberAtThisLevel;
+        });
+      }
     });
   list?.rare &&
     list.rare.forEach((unit) => {
-      getWizardLevels(unit).forEach((numberAtThisLevel, level) => {
-        rareWizards[level] += numberAtThisLevel;
-        totalWizards[level] += numberAtThisLevel;
-      });
+      if (!unit.named) {
+        getWizardLevels(unit).forEach((numberAtThisLevel, level) => {
+          rareWizards[level] += numberAtThisLevel;
+          totalWizards[level] += numberAtThisLevel;
+        });
+      }
     });
   if (totalWizards[4] > level4Max) {
     if (characterWizards[4] > 0) {
@@ -351,6 +361,28 @@ export const grandMeleeWizardLimits = (list) => {
     }
   }
   return errors;
+};
+
+/**
+ * In Grand Melee, no single unit can contain more than half the models in the army.
+ */
+export const grandMeleeMaxModelsSingleUnit = (list) => {
+  const unitEntries = getArmyModelEntries(list);
+  const totalModels = unitEntries.reduce(
+    (total, { models }) => total + models,
+    0,
+  );
+
+  if (totalModels <= 0) {
+    return [];
+  }
+
+  return unitEntries
+    .filter(({ models }) => models > totalModels / 2)
+    .map(({ section }) => ({
+      message: "misc.error.grandMelee50Models",
+      section,
+    }));
 };
 
 /**
@@ -417,6 +449,38 @@ const hasSharedCombinedArmsLimit = (otherUnit, unitToValidate) => {
   return (
     otherUnit.sharedCombinedArmsUnits &&
     otherUnit.sharedCombinedArmsUnits.includes(unitToValidate.id.split(".")[0])
+  );
+};
+
+const unitCategories = [
+  "lords",
+  "heroes",
+  "characters",
+  "core",
+  "special",
+  "rare",
+  "mercenaries",
+  "allies",
+];
+
+const getModelCount = (unit) => {
+  const modelCount = Number(unit?.strength || unit?.minimum || 1);
+
+  return Number.isFinite(modelCount) ? modelCount : 1;
+};
+
+const getArmyModelEntries = (list) => {
+  return unitCategories.flatMap((section) =>
+    (list[section] || []).flatMap((unit) => [
+      {
+        section,
+        models: getModelCount(unit),
+      },
+      ...(unit.detachments || []).map((detachment) => ({
+        section,
+        models: getModelCount(detachment),
+      })),
+    ]),
   );
 };
 
