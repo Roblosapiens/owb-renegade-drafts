@@ -2037,11 +2037,11 @@
         "necromancy"
       ],
       "specialRules": {
-        "name_en": "Accursed Weapons, Dark Vitality {renegade}, Flammable, Indomitable (2), Lore of Undeath {renegade}, Necromantic Undead, Regeneration (5+)",
-        "name_cn": "诅咒武器, 黑暗活力, 易燃, 顽强不屈(2), 亡灵法系, 不死亡灵, 重生(5+)",
-        "name_de": "Accursed Weapons, Dark Vitality {renegade}, Flammable, Indomitable (2), Lore of Undeath {renegade}, Necromantic Undead, Regeneration (5+)",
-        "name_es": "Accursed Weapons, Dark Vitality {renegade}, Flammable, Indomitable (2), Lore of Undeath {renegade}, Necromantic Undead, Regeneration (5+)",
-        "name_fr": "Armes Maudites, Sombre Vitalité, Inflammable, Indomptable (2), Domaine de la Non-vie, Mort-vivant Nécromantique, Régénération (5+)"
+        "name_en": "Level 1 Wizard, Accursed Weapons, Dark Vitality {renegade}, Flammable, Indomitable (2), Lore of Undeath {renegade}, Necromantic Undead, Regeneration (5+)",
+        "name_cn": "1级法师, 诅咒武器, 黑暗活力, 易燃, 顽强不屈(2), 亡灵法系, 不死亡灵, 重生(5+)",
+        "name_de": "Level 1 Wizard, Accursed Weapons, Dark Vitality {renegade}, Flammable, Indomitable (2), Lore of Undeath {renegade}, Necromantic Undead, Regeneration (5+)",
+        "name_es": "Level 1 Wizard, Accursed Weapons, Dark Vitality {renegade}, Flammable, Indomitable (2), Lore of Undeath {renegade}, Necromantic Undead, Regeneration (5+)",
+        "name_fr": "Sorcier de Niveau 1, Armes Maudites, Sombre Vitalité, Inflammable, Indomptable (2), Domaine de la Non-vie, Mort-vivant Nécromantique, Régénération (5+)"
       },
       "notes": {
         "name_en": "0-1 Vampire Lord / Master Necromancer / Strigoi per 1000 points; 1+ Wizard",
@@ -2161,9 +2161,6 @@
       },
       "armyComposition": {
         "vampire-counts": {
-          "category": "core"
-        },
-        "vc-renegade": {
           "category": "core"
         }
       }
@@ -2717,6 +2714,122 @@
             "name_es": "Cleaving Blow (Black Knights & Hell Knight only), Close Order, First Charge, Necromantic Undead, Regeneration (6+), Swiftstride, Spectral Steed",
             "name_fr": "Coup de Fendoir (Chevaliers Noirs & Chevalier Infernal uniquement), Ordre Serré, Première Charge, Mort-vivant Nécromantique, Régénération (6+), Rapide, Monture Spectrale"
           }
+        }
+      }
+    },
+    {
+      "name_en": "Skeleton Warriors {renegade}",
+      "name_cn": "骷髅战士",
+      "name_de": "Skelettkrieger",
+      "name_es": "Skeleton Warriors",
+      "name_fr": "Guerriers Squelette",
+      "id": "skeleton-warriors",
+      "points": 4,
+      "minimum": 10,
+      "maximum": 0,
+      "command": [
+        {
+          "name_en": "Skeleton Champion",
+          "name_cn": "骷髅冠军",
+          "name_de": "Skeletthauptmann",
+          "name_es": "Skeleton Champion",
+          "name_fr": "Champion Squelette",
+          "points": 5
+        },
+        {
+          "name_en": "Standard bearer",
+          "name_cn": "旗手",
+          "name_de": "Standartenträger",
+          "name_es": "Standard bearer",
+          "name_fr": "Porte-étendard",
+          "points": 5,
+          "magic": {
+            "types": [
+              "banner"
+            ],
+            "maxPoints": 50
+          },
+          "notes": {
+            "name_en": "0-1 unit per 1000 points may purchase a magic standard",
+            "name_cn": "0-1单位/每1000分可以选择装备一个魔法战旗",
+            "name_it": "0-1 unit per 1000 points may purchase a magic standard",
+            "name_de": "0-1 Einheit pro 1000 Punkte darf eine Magische Standarte erwerben",
+            "name_fr": "0-1 unité par tranche de 1000 points peut acheter une bannière magique",
+            "name_es": "0-1 unidad cada 1.000 puntos puede adquirir un estandarte mágico"
+          }
+        },
+        {
+          "name_en": "Musician",
+          "name_cn": "乐手",
+          "name_de": "Musiker",
+          "name_es": "Musician",
+          "name_fr": "Musicien",
+          "points": 5
+        }
+      ],
+      "equipment": [
+        {
+          "name_en": "Hand weapons",
+          "name_cn": "单手武器",
+          "name_de": "Handwaffen",
+          "name_es": "Hand weapons",
+          "name_fr": "Armes de base",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        },
+        {
+          "name_en": "Thrusting spears",
+          "name_cn": "刺矛",
+          "name_de": "Stoßspeere",
+          "name_es": "Thrusting spears",
+          "name_fr": "Lances d’infanterie",
+          "points": 1,
+          "perModel": true
+        }
+      ],
+      "armor": [
+        {
+          "name_en": "Shields",
+          "name_cn": "盾牌",
+          "name_de": "Schilde",
+          "name_es": "Shields",
+          "name_fr": "Boucliers",
+          "points": 0,
+          "perModel": true,
+          "active": true
+        },
+        {
+          "name_en": "Light armour",
+          "name_cn": "轻甲",
+          "name_de": "Leichte Rüstung",
+          "name_es": "Light armour",
+          "name_fr": "Armure légère",
+          "points": 1,
+          "perModel": true
+        }
+      ],
+      "options": [],
+      "mounts": [],
+      "items": [],
+      "lores": [],
+      "specialRules": {
+        "name_en": "Close Order, Horde, Necromantic Undead, Regeneration (6+)",
+        "name_cn": "紧密阵型, 部群, 不死亡灵, 重生(6+)",
+        "name_de": "Geschlossene Ränge, Horde, Nekromantische Untote, Regeneration (6+)",
+        "name_es": "Close Order, Horde, Necromantic Undead, Regeneration (6+)",
+        "name_fr": "Ordre Serré, Horde, Mort-vivant Nécromantique, Régénération (6+)"
+      },
+      "notes": {
+        "name_en": "",
+        "name_cn": "",
+        "name_de": "",
+        "name_es": "",
+        "name_fr": ""
+      },
+      "armyComposition": {
+        "vc-renegade": {
+          "category": "core"
         }
       }
     }
