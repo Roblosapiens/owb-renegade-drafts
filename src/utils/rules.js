@@ -3673,7 +3673,12 @@ export const rules = {
       minPercent: 25,
       units: [
         {
-          ids: ["grave-guard", "black-knights"],
+          ids: ["corpse-cart"],
+          min: 0,
+          max: 3,
+        },
+        {
+          ids: ["grave-guard-core", "black-knights-core", "grave-guard", "black-knights"],
           min: 0,
           max: 1,
           requiresType: "characters",
@@ -3685,21 +3690,10 @@ export const rules = {
       maxPercent: 50,
       units: [
         {
-          ids: ["grave-guard", "black-knights"],
+          ids: ["varghulf"],
           min: 0,
           max: 1,
           points: 1000,
-        },
-        {
-          ids: ["crypt-horrors", "fell-bats"],
-          min: 0,
-          max: 1,
-          points: 1000,
-        },
-        {
-          ids: ["corpse-cart"],
-          min: 0,
-          max: 3,
         },
         {
           ids: ["spirit-hosts"],
@@ -3708,6 +3702,13 @@ export const rules = {
           requiresType: "characters",
           requires: ["cairn-wraith", "tomb-banshee"],
           perUnit: true,
+        },
+        {
+          ids: ["blood-knights"],
+          min: 0,
+          max: 1,
+          requiresGeneral: true,
+          requires: ["vampire-count"],
         },
         {
           ids: ["vargheists", "terrorgheist"],
@@ -3722,24 +3723,7 @@ export const rules = {
       maxPercent: 25,
       units: [
         {
-          ids: ["vargheists"],
-          min: 0,
-          max: 1,
-          points: 1000,
-        },
-        {
           ids: ["black-coach"],
-          min: 0,
-          max: 2,
-        },
-        {
-          ids: ["terrorgheist", "varghulf"],
-          min: 0,
-          max: 1,
-          points: 1000,
-        },
-        {
-          ids: ["blood-knights"],
           min: 0,
           max: 1,
           points: 1000,
@@ -3754,6 +3738,7 @@ export const rules = {
         },
       ],
     },
+    mercenaries: { maxPercent: 20 },
     allies: { maxPercent: 25 },
   },
   skaven: {

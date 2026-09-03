@@ -655,7 +655,15 @@
         {
           "army": "tomb-kings-of-khemri"
         }
-      ]
+      ],
+      "mercenaries": {
+        "vc-renegade": [
+          {
+            "army": "empire-of-man",
+            "units": ["free-company-militia", "empire-archers"]
+          }
+        ]
+      }
     },
     {
       "id": "daemons-of-chaos",

@@ -116,6 +116,16 @@ const additionalOWBRules = {
 };
 
 export const synonyms = {
+  "accursed weapons": "accursed weapons renegade",
+  "infinite hatred": "infinite hatred renegade",
+  "quickblood": "quickblood renegade",
+  "honour or death": "honour or death renegade",
+  "red fury": "red fury renegade",
+  "vigor mortis": "vigor mortis renegade",
+  "cloud of horror": "cloud of horror renegade",
+  "shambling horde": "shambling horde renegade",
+  "ghoulkin": "ghoulkin renegade",
+  "master of the dead": "master of the dead renegade",
   "carriage hauler": "carriage hauler renegade",
   "ba'hal": "champions",
   manburner: "champions",

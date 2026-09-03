@@ -23775,5 +23775,55 @@
     "url": "special-rules/carriage-hauler-renegade",
     "page": "TRCD, p. special",
     "description": "During the Movement phase, up to two friendly war machines with the Steam Carriage upgrade that are completely within this model's rear arc and within 8\" of its base at the beginning of the phase can be moved when this model moves and may replace their Movement characteristic with this model's. These war machines must finish their movement completely within this model's rear arc and within 8\" of its base. Unless this model moves using the Lumbering Destruction special rule or makes a charge move, these war machines are not considered to have moved this turn."
+  },
+  "master of the dead renegade": {
+    "url": "special-rules/master-of-the-dead",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "Your army must include at least one Wizard as Master of the Dead (highest Wizard Level). If slain, friendly Necromantic Undead lose Regeneration (X) and must take Leadership tests each turn, losing Wounds equal to the amount failed by."
+  },
+  "ghoulkin renegade": {
+    "url": "special-rules/ghoulkin",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "If a model with this special rule is your General, all Crypt Ghouls, Crypt Horrors and Varghulfs gain the Vanguard special rule."
+  },
+  "shambling horde renegade": {
+    "url": "special-rules/shambling-horde",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "Renegade Zombies special rule replacing The Newly Dead in Vampire Counts draft V1.5.3.1."
+  },
+  "cloud of horror renegade": {
+    "url": "special-rules/cloud-of-horror",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "Bat Swarms special rule from Vampire Counts Renegade draft V1.5.3.1."
+  },
+  "vigor mortis renegade": {
+    "url": "special-rules/vigor-mortis",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "Corpse Cart special rule from Vampire Counts Renegade draft V1.5.3.1."
+  },
+  "red fury renegade": {
+    "url": "special-rules/red-fury",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "Vampiric Power (50 pts). Level 1 Wizard Vampires only. For each unsaved wound caused by this model's Attacks in combat, it immediately makes one additional Attack (these cannot generate further Attacks)."
+  },
+  "honour or death renegade": {
+    "url": "special-rules/honour-or-death",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "Vampiric Power (35 pts). Enemy models must pass a Leadership test to issue a challenge against this Vampire; failed tests force them to Retire. Challenges issued by this Vampire cannot be refused."
+  },
+  "quickblood renegade": {
+    "url": "special-rules/quickblood",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "Vampiric Power (25 pts). This Vampire gains the Strike First special rule."
+  },
+  "infinite hatred renegade": {
+    "url": "special-rules/infinite-hatred",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "Vampiric Power (25 pts). This Vampire gains Hatred (all enemies)."
+  },
+  "accursed weapons renegade": {
+    "url": "special-rules/accursed-weapons",
+    "page": "VC Renegade V1.5.3.1",
+    "description": "A hand weapon carried by a model with this special rule has Magical Attacks and Armour Piercing (-1)."
   }
 }
