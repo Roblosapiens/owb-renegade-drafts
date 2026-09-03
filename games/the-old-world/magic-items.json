@@ -7268,7 +7268,8 @@
       "points": 65,
       "type": "banner",
       "onePerArmy": true,
-      "name": "banner of the barrows"
+      "name": "banner of the barrows",
+      "armyComposition": "vampire-counts"
     },
     {
       "name_de": "Drakenhofbanner",
@@ -7280,7 +7281,8 @@
       "points": 50,
       "type": "banner",
       "onePerArmy": true,
-      "name": "drakenhof banner"
+      "name": "drakenhof banner",
+      "armyComposition": "vampire-counts"
     },
     {
       "name_de": "Kreischendes Banner",
@@ -7292,7 +7294,8 @@
       "points": 45,
       "type": "banner",
       "onePerArmy": true,
-      "name": "the screaming banner"
+      "name": "the screaming banner",
+      "armyComposition": "vampire-counts"
     },
     {
       "name_de": "Standarte der höllischen Lebenskraft",
@@ -7486,6 +7489,45 @@
       "type": "talisman",
       "onePerArmy": true,
       "name": "crown of the damned"
+    },
+    {
+      "name_de": "Drakenhofbanner",
+      "name_en": "Drakenhof Banner {renegade}",
+      "name_cn": "邓肯霍夫军旗",
+      "name_es": "Estandarte de Drakenhof",
+      "name_fr": "Bannière de Drakenhof",
+      "name_it": "Drakenhof Banner",
+      "points": 60,
+      "type": "banner",
+      "onePerArmy": true,
+      "name": "drakenhof banner renegade",
+      "armyComposition": "vc-renegade"
+    },
+    {
+      "name_de": "Banner der Hügelgräber",
+      "name_en": "Banner of the Barrows {renegade}",
+      "name_cn": "古坟军旗",
+      "name_es": "Estandarte de los túmulos",
+      "name_fr": "Bannière des Tertres",
+      "name_it": "Banner of the Barrows",
+      "points": 50,
+      "type": "banner",
+      "onePerArmy": true,
+      "name": "banner of the barrows renegade",
+      "armyComposition": "vc-renegade"
+    },
+    {
+      "name_de": "Kreischendes Banner",
+      "name_en": "The Screaming Banner {renegade}",
+      "name_cn": "哀嚎军旗",
+      "name_es": "La bandera de los gritos",
+      "name_fr": "Bannière Hurlante",
+      "name_it": "The Screaming Banner",
+      "points": 25,
+      "type": "banner",
+      "onePerArmy": true,
+      "name": "the screaming banner renegade",
+      "armyComposition": "vc-renegade"
     }
   ],
   "daemonic-gifts-common": [
@@ -8092,7 +8134,8 @@
       "points": 50,
       "type": "vampiric-power",
       "onePerArmy": true,
-      "name": "curse of the revenant"
+      "name": "curse of the revenant",
+      "armyComposition": "vampire-counts"
     },
     {
       "name_de": "Bezauberndes Wesen",
@@ -8105,7 +8148,8 @@
       "points": 40,
       "type": "vampiric-power",
       "onePerArmy": true,
-      "name": "beguile"
+      "name": "beguile",
+      "armyComposition": "vampire-counts"
     },
     {
       "name_de": "Übernatürlicher Schrecken",
@@ -8157,7 +8201,8 @@
       "points": 30,
       "type": "vampiric-power",
       "onePerArmy": true,
-      "name": "dark acolyte renegade"
+      "name": "dark acolyte renegade",
+      "armyComposition": "vc-renegade"
     },
     {
       "name_de": "Fliegender Schrecken",
@@ -8171,6 +8216,94 @@
       "type": "vampiric-power",
       "onePerArmy": true,
       "name": "flying horror"
+    },
+    {
+      "name_de": "Fluch des Wiedergängers",
+      "name_en": "Curse of the Revenant {renegade}",
+      "name_cn": "亡魂诅咒",
+      "name_es": "Curse of the Revenant",
+      "name_fr": "Malédiction du Revenant",
+      "name_it": "Curse of the Revenant",
+      "nonExclusive": true,
+      "points": 40,
+      "type": "vampiric-power",
+      "onePerArmy": true,
+      "name": "curse of the revenant renegade",
+      "armyComposition": "vc-renegade"
+    },
+    {
+      "name_de": "Bezauberndes Wesen",
+      "name_en": "Beguile {renegade}",
+      "name_cn": "欺瞒诱惑",
+      "name_es": "Beguile",
+      "name_fr": "Séduction",
+      "name_it": "Beguile",
+      "nonExclusive": true,
+      "points": 20,
+      "type": "vampiric-power",
+      "onePerArmy": true,
+      "name": "beguile renegade",
+      "armyComposition": "vc-renegade"
+    },
+    {
+      "name_en": "Red Fury {renegade}",
+      "name_cn": "赤红狂怒",
+      "name_de": "Roter Zorn",
+      "name_es": "Red Fury",
+      "name_fr": "Fureur Rouge",
+      "name_it": "Red Fury",
+      "nonExclusive": true,
+      "points": 50,
+      "type": "vampiric-power",
+      "onePerArmy": true,
+      "name": "red fury renegade",
+      "armyComposition": "vc-renegade",
+      "notes": {
+        "name_en": "Level 1 Wizard Vampires only",
+        "name_fr": "Vampires Sorciers de Niveau 1 uniquement"
+      }
+    },
+    {
+      "name_en": "Honour or Death {renegade}",
+      "name_cn": "荣誉或死亡",
+      "name_de": "Ehre oder Tod",
+      "name_es": "Honour or Death",
+      "name_fr": "Honneur ou Mort",
+      "name_it": "Honour or Death",
+      "nonExclusive": true,
+      "points": 35,
+      "type": "vampiric-power",
+      "onePerArmy": true,
+      "name": "honour or death renegade",
+      "armyComposition": "vc-renegade"
+    },
+    {
+      "name_en": "Quickblood {renegade}",
+      "name_cn": "迅捷之血",
+      "name_de": "Schnellblut",
+      "name_es": "Quickblood",
+      "name_fr": "Sang Vif",
+      "name_it": "Quickblood",
+      "nonExclusive": true,
+      "points": 25,
+      "type": "vampiric-power",
+      "onePerArmy": true,
+      "name": "quickblood renegade",
+      "armyComposition": "vc-renegade"
+    },
+    {
+      "name_en": "Infinite Hatred {renegade}",
+      "name_cn": "无尽仇恨",
+      "name_de": "Unendlicher Hass",
+      "name_es": "Infinite Hatred",
+      "name_fr": "Haine Infinie",
+      "name_it": "Infinite Hatred",
+      "nonExclusive": true,
+      "points": 25,
+      "type": "vampiric-power",
+      "onePerArmy": true,
+      "name": "infinite hatred renegade",
+      "armyComposition": "vc-renegade"
     }
   ],
   "forbidden-poisons": [
