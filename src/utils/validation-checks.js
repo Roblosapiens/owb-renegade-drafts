@@ -218,6 +218,32 @@ export const generalIsWizard = (list) => {
 };
 
 /**
+ * Renegade Vampire Counts replace Death of a General with Master of the Dead:
+ * the army needs at least one Wizard, but that Wizard does not have to be the
+ * General (highest Wizard Level is MotD automatically).
+ */
+export const hasMasterOfTheDead = (list) => {
+  const units = [
+    ...(list?.characters || []),
+    ...(list?.core || []),
+    ...(list?.special || []),
+    ...(list?.rare || []),
+  ];
+  const hasWizard = units.some(
+    (unit) => getWizardLevels(unit).lastIndexOf(1) >= 0,
+  );
+  if (!hasWizard) {
+    return [
+      {
+        message: "misc.error.noMasterOfTheDead",
+        section: "characters",
+      },
+    ];
+  }
+  return [];
+};
+
+/**
  * Factory function for creating validation for whether the army list has a minimum number
  * of non-character units who aren't war machines, swarms, or war beasts.
  */

@@ -12,6 +12,7 @@ import {
   grandMeleeMaxModelsSingleUnit,
   generalLeadership,
   grandMeleeWizardLimits,
+  hasMasterOfTheDead,
   hierophantChecks,
   maxOneBSB,
   oneGeneral,
@@ -170,7 +171,12 @@ export const validateList = ({ list, language, intl }) => {
     }
   }
   if (list?.army === "vampire-counts") {
-    checks.push(generalIsWizard);
+    // Renegade uses Master of the Dead (any Wizard) instead of Death of a General
+    if (list.armyComposition === "vc-renegade") {
+      checks.push(hasMasterOfTheDead);
+    } else {
+      checks.push(generalIsWizard);
+    }
   }
   for (let check of checks) {
     errors = errors.concat(check(list, language, intl));

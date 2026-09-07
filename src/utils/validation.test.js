@@ -944,6 +944,7 @@ describe("validateList", () => {
     const list = {
       ...baseList,
       army: "vampire-counts",
+      armyComposition: "vampire-counts",
       characters: [
         makeCharacter({
           id: "vampire-thrall",
@@ -968,5 +969,50 @@ describe("validateList", () => {
 
     const errors2 = validateList({ list, language: "en", intl });
     expect(getMessages(errors2)).toEqual([]);
+  });
+
+  test("allows a non-wizard general for Vampire Counts Renegade with a Master of the Dead", () => {
+    const list = {
+      ...baseList,
+      army: "vampire-counts",
+      armyComposition: "vc-renegade",
+      characters: [
+        makeCharacter({
+          id: "wight-king",
+          name_en: "Wight King",
+          isGeneral: true,
+        }),
+        makeCharacter({
+          id: "master-necromancer",
+          name_en: "Master Necromancer",
+          options: [{ name_en: "Level 3 Wizard", active: true }],
+        }),
+      ],
+    };
+
+    const errors = validateList({ list, language: "en", intl });
+    expect(getMessages(errors)).toEqual([]);
+  });
+
+  test("adds noMasterOfTheDead if a Vampire Counts Renegade list has no wizard", () => {
+    const list = {
+      ...baseList,
+      army: "vampire-counts",
+      armyComposition: "vc-renegade",
+      characters: [
+        makeCharacter({
+          id: "wight-king",
+          name_en: "Wight King",
+          isGeneral: true,
+        }),
+        makeCharacter({
+          id: "vampire-thrall",
+          name_en: "Vampire Thrall",
+        }),
+      ],
+    };
+
+    const errors = validateList({ list, language: "en", intl });
+    expect(getMessages(errors)).toEqual(["misc.error.noMasterOfTheDead"]);
   });
 });
